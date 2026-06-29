@@ -1,8 +1,0 @@
-
-> @stencil-kit/vue@0.0.0 build
-> npm run tsc
-
-
-> @stencil-kit/vue@0.0.0 tsc
-> tsc -p . --outDir ./dist
-
