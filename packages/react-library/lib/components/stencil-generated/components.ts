@@ -7,15 +7,31 @@
 
 /* eslint-disable */
 
-import type { StencilReactComponent } from '@stencil/react-output-target/runtime';
+import type { EventName, StencilReactComponent } from '@stencil/react-output-target/runtime';
 import { createComponent } from '@stencil/react-output-target/runtime';
 import React from 'react';
 
+import { type MyAlertCustomEvent, type MyDropdownCustomEvent, type MyInputCustomEvent, type MyModalCustomEvent } from "@stencil-kit/core";
 import type { Components } from "@stencil-kit/core/dist/components";
+import { MyAlert as MyAlertElement, defineCustomElement as defineMyAlert } from "@stencil-kit/core/dist/components/my-alert.js";
 import { MyBadge as MyBadgeElement, defineCustomElement as defineMyBadge } from "@stencil-kit/core/dist/components/my-badge.js";
 import { MyButton as MyButtonElement, defineCustomElement as defineMyButton } from "@stencil-kit/core/dist/components/my-button.js";
 import { MyCard as MyCardElement, defineCustomElement as defineMyCard } from "@stencil-kit/core/dist/components/my-card.js";
 import { MyComponent as MyComponentElement, defineCustomElement as defineMyComponent } from "@stencil-kit/core/dist/components/my-component.js";
+import { MyDropdown as MyDropdownElement, defineCustomElement as defineMyDropdown } from "@stencil-kit/core/dist/components/my-dropdown.js";
+import { MyInput as MyInputElement, defineCustomElement as defineMyInput } from "@stencil-kit/core/dist/components/my-input.js";
+import { MyModal as MyModalElement, defineCustomElement as defineMyModal } from "@stencil-kit/core/dist/components/my-modal.js";
+
+export type MyAlertEvents = { onMyDismiss: EventName<MyAlertCustomEvent<void>> };
+
+export const MyAlert: StencilReactComponent<MyAlertElement, MyAlertEvents, Components.MyAlert> = /*@__PURE__*/ createComponent<MyAlertElement, MyAlertEvents, Components.MyAlert>({
+    tagName: 'my-alert',
+    elementClass: MyAlertElement,
+    // @ts-ignore - ignore potential React type mismatches between the Stencil Output Target and your project.
+    react: React,
+    events: { onMyDismiss: 'myDismiss' } as MyAlertEvents,
+    defineCustomElement: defineMyAlert
+});
 
 export type MyBadgeEvents = NonNullable<unknown>;
 
@@ -59,4 +75,43 @@ export const MyComponent: StencilReactComponent<MyComponentElement, MyComponentE
     react: React,
     events: {} as MyComponentEvents,
     defineCustomElement: defineMyComponent
+});
+
+export type MyDropdownEvents = { onMyChange: EventName<MyDropdownCustomEvent<string>> };
+
+export const MyDropdown: StencilReactComponent<MyDropdownElement, MyDropdownEvents, Components.MyDropdown> = /*@__PURE__*/ createComponent<MyDropdownElement, MyDropdownEvents, Components.MyDropdown>({
+    tagName: 'my-dropdown',
+    elementClass: MyDropdownElement,
+    // @ts-ignore - ignore potential React type mismatches between the Stencil Output Target and your project.
+    react: React,
+    events: { onMyChange: 'myChange' } as MyDropdownEvents,
+    defineCustomElement: defineMyDropdown
+});
+
+export type MyInputEvents = {
+    onMyChange: EventName<MyInputCustomEvent<string>>,
+    onMyBlur: EventName<MyInputCustomEvent<void>>
+};
+
+export const MyInput: StencilReactComponent<MyInputElement, MyInputEvents, Components.MyInput> = /*@__PURE__*/ createComponent<MyInputElement, MyInputEvents, Components.MyInput>({
+    tagName: 'my-input',
+    elementClass: MyInputElement,
+    // @ts-ignore - ignore potential React type mismatches between the Stencil Output Target and your project.
+    react: React,
+    events: {
+        onMyChange: 'myChange',
+        onMyBlur: 'myBlur'
+    } as MyInputEvents,
+    defineCustomElement: defineMyInput
+});
+
+export type MyModalEvents = { onMyClose: EventName<MyModalCustomEvent<void>> };
+
+export const MyModal: StencilReactComponent<MyModalElement, MyModalEvents, Components.MyModal> = /*@__PURE__*/ createComponent<MyModalElement, MyModalEvents, Components.MyModal>({
+    tagName: 'my-modal',
+    elementClass: MyModalElement,
+    // @ts-ignore - ignore potential React type mismatches between the Stencil Output Target and your project.
+    react: React,
+    events: { onMyClose: 'myClose' } as MyModalEvents,
+    defineCustomElement: defineMyModal
 });

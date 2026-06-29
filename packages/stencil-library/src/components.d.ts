@@ -5,7 +5,23 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { DropdownOption } from "./components/my-dropdown/my-dropdown";
+export { DropdownOption } from "./components/my-dropdown/my-dropdown";
 export namespace Components {
+    interface MyAlert {
+        /**
+          * @default ''
+         */
+        "alertTitle": string;
+        /**
+          * @default false
+         */
+        "dismissible": boolean;
+        /**
+          * @default 'info'
+         */
+        "type": 'success' | 'warning' | 'error' | 'info';
+    }
     interface MyBadge {
         /**
           * Badge color variant
@@ -69,8 +85,111 @@ export namespace Components {
          */
         "middle"?: string;
     }
+    interface MyDropdown {
+        /**
+          * @default false
+         */
+        "disabled": boolean;
+        /**
+          * @default ''
+         */
+        "error": string;
+        /**
+          * @default ''
+         */
+        "label": string;
+        /**
+          * @default []
+         */
+        "options": DropdownOption[] | string;
+        /**
+          * @default 'Select an option'
+         */
+        "placeholder": string;
+        /**
+          * @default ''
+         */
+        "value": string;
+    }
+    interface MyInput {
+        /**
+          * @default false
+         */
+        "disabled": boolean;
+        /**
+          * @default ''
+         */
+        "error": string;
+        /**
+          * @default ''
+         */
+        "label": string;
+        /**
+          * @default ''
+         */
+        "placeholder": string;
+        /**
+          * @default false
+         */
+        "required": boolean;
+        /**
+          * @default 'text'
+         */
+        "type": 'text' | 'email' | 'password' | 'number' | 'tel';
+        /**
+          * @default ''
+         */
+        "value": string;
+    }
+    interface MyModal {
+        /**
+          * @default ''
+         */
+        "modalTitle": string;
+        /**
+          * @default false
+         */
+        "open": boolean;
+        /**
+          * @default 'medium'
+         */
+        "size": 'small' | 'medium' | 'large';
+    }
+}
+export interface MyAlertCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLMyAlertElement;
+}
+export interface MyDropdownCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLMyDropdownElement;
+}
+export interface MyInputCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLMyInputElement;
+}
+export interface MyModalCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLMyModalElement;
 }
 declare global {
+    interface HTMLMyAlertElementEventMap {
+        "myDismiss": void;
+    }
+    interface HTMLMyAlertElement extends Components.MyAlert, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLMyAlertElementEventMap>(type: K, listener: (this: HTMLMyAlertElement, ev: MyAlertCustomEvent<HTMLMyAlertElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLMyAlertElementEventMap>(type: K, listener: (this: HTMLMyAlertElement, ev: MyAlertCustomEvent<HTMLMyAlertElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLMyAlertElement: {
+        prototype: HTMLMyAlertElement;
+        new (): HTMLMyAlertElement;
+    };
     interface HTMLMyBadgeElement extends Components.MyBadge, HTMLStencilElement {
     }
     var HTMLMyBadgeElement: {
@@ -95,14 +214,85 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLMyDropdownElementEventMap {
+        "myChange": string;
+    }
+    interface HTMLMyDropdownElement extends Components.MyDropdown, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLMyDropdownElementEventMap>(type: K, listener: (this: HTMLMyDropdownElement, ev: MyDropdownCustomEvent<HTMLMyDropdownElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLMyDropdownElementEventMap>(type: K, listener: (this: HTMLMyDropdownElement, ev: MyDropdownCustomEvent<HTMLMyDropdownElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLMyDropdownElement: {
+        prototype: HTMLMyDropdownElement;
+        new (): HTMLMyDropdownElement;
+    };
+    interface HTMLMyInputElementEventMap {
+        "myChange": string;
+        "myBlur": void;
+    }
+    interface HTMLMyInputElement extends Components.MyInput, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLMyInputElementEventMap>(type: K, listener: (this: HTMLMyInputElement, ev: MyInputCustomEvent<HTMLMyInputElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLMyInputElementEventMap>(type: K, listener: (this: HTMLMyInputElement, ev: MyInputCustomEvent<HTMLMyInputElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLMyInputElement: {
+        prototype: HTMLMyInputElement;
+        new (): HTMLMyInputElement;
+    };
+    interface HTMLMyModalElementEventMap {
+        "myClose": void;
+    }
+    interface HTMLMyModalElement extends Components.MyModal, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLMyModalElementEventMap>(type: K, listener: (this: HTMLMyModalElement, ev: MyModalCustomEvent<HTMLMyModalElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLMyModalElementEventMap>(type: K, listener: (this: HTMLMyModalElement, ev: MyModalCustomEvent<HTMLMyModalElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLMyModalElement: {
+        prototype: HTMLMyModalElement;
+        new (): HTMLMyModalElement;
+    };
     interface HTMLElementTagNameMap {
+        "my-alert": HTMLMyAlertElement;
         "my-badge": HTMLMyBadgeElement;
         "my-button": HTMLMyButtonElement;
         "my-card": HTMLMyCardElement;
         "my-component": HTMLMyComponentElement;
+        "my-dropdown": HTMLMyDropdownElement;
+        "my-input": HTMLMyInputElement;
+        "my-modal": HTMLMyModalElement;
     }
 }
 declare namespace LocalJSX {
+    interface MyAlert {
+        /**
+          * @default ''
+         */
+        "alertTitle"?: string;
+        /**
+          * @default false
+         */
+        "dismissible"?: boolean;
+        "onMyDismiss"?: (event: MyAlertCustomEvent<void>) => void;
+        /**
+          * @default 'info'
+         */
+        "type"?: 'success' | 'warning' | 'error' | 'info';
+    }
     interface MyBadge {
         /**
           * Badge color variant
@@ -166,7 +356,86 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface MyDropdown {
+        /**
+          * @default false
+         */
+        "disabled"?: boolean;
+        /**
+          * @default ''
+         */
+        "error"?: string;
+        /**
+          * @default ''
+         */
+        "label"?: string;
+        "onMyChange"?: (event: MyDropdownCustomEvent<string>) => void;
+        /**
+          * @default []
+         */
+        "options"?: DropdownOption[] | string;
+        /**
+          * @default 'Select an option'
+         */
+        "placeholder"?: string;
+        /**
+          * @default ''
+         */
+        "value"?: string;
+    }
+    interface MyInput {
+        /**
+          * @default false
+         */
+        "disabled"?: boolean;
+        /**
+          * @default ''
+         */
+        "error"?: string;
+        /**
+          * @default ''
+         */
+        "label"?: string;
+        "onMyBlur"?: (event: MyInputCustomEvent<void>) => void;
+        "onMyChange"?: (event: MyInputCustomEvent<string>) => void;
+        /**
+          * @default ''
+         */
+        "placeholder"?: string;
+        /**
+          * @default false
+         */
+        "required"?: boolean;
+        /**
+          * @default 'text'
+         */
+        "type"?: 'text' | 'email' | 'password' | 'number' | 'tel';
+        /**
+          * @default ''
+         */
+        "value"?: string;
+    }
+    interface MyModal {
+        /**
+          * @default ''
+         */
+        "modalTitle"?: string;
+        "onMyClose"?: (event: MyModalCustomEvent<void>) => void;
+        /**
+          * @default false
+         */
+        "open"?: boolean;
+        /**
+          * @default 'medium'
+         */
+        "size"?: 'small' | 'medium' | 'large';
+    }
 
+    interface MyAlertAttributes {
+        "type": 'success' | 'warning' | 'error' | 'info';
+        "alertTitle": string;
+        "dismissible": boolean;
+    }
     interface MyBadgeAttributes {
         "color": 'success' | 'warning' | 'error' | 'info' | 'neutral';
         "size": 'small' | 'medium' | 'large';
@@ -187,22 +456,52 @@ declare namespace LocalJSX {
         "middle": string;
         "last": string;
     }
+    interface MyDropdownAttributes {
+        "options": DropdownOption[] | string;
+        "value": string;
+        "placeholder": string;
+        "label": string;
+        "disabled": boolean;
+        "error": string;
+    }
+    interface MyInputAttributes {
+        "label": string;
+        "placeholder": string;
+        "value": string;
+        "type": 'text' | 'email' | 'password' | 'number' | 'tel';
+        "error": string;
+        "disabled": boolean;
+        "required": boolean;
+    }
+    interface MyModalAttributes {
+        "open": boolean;
+        "modalTitle": string;
+        "size": 'small' | 'medium' | 'large';
+    }
 
     interface IntrinsicElements {
+        "my-alert": Omit<MyAlert, keyof MyAlertAttributes> & { [K in keyof MyAlert & keyof MyAlertAttributes]?: MyAlert[K] } & { [K in keyof MyAlert & keyof MyAlertAttributes as `attr:${K}`]?: MyAlertAttributes[K] } & { [K in keyof MyAlert & keyof MyAlertAttributes as `prop:${K}`]?: MyAlert[K] };
         "my-badge": Omit<MyBadge, keyof MyBadgeAttributes> & { [K in keyof MyBadge & keyof MyBadgeAttributes]?: MyBadge[K] } & { [K in keyof MyBadge & keyof MyBadgeAttributes as `attr:${K}`]?: MyBadgeAttributes[K] } & { [K in keyof MyBadge & keyof MyBadgeAttributes as `prop:${K}`]?: MyBadge[K] };
         "my-button": Omit<MyButton, keyof MyButtonAttributes> & { [K in keyof MyButton & keyof MyButtonAttributes]?: MyButton[K] } & { [K in keyof MyButton & keyof MyButtonAttributes as `attr:${K}`]?: MyButtonAttributes[K] } & { [K in keyof MyButton & keyof MyButtonAttributes as `prop:${K}`]?: MyButton[K] };
         "my-card": Omit<MyCard, keyof MyCardAttributes> & { [K in keyof MyCard & keyof MyCardAttributes]?: MyCard[K] } & { [K in keyof MyCard & keyof MyCardAttributes as `attr:${K}`]?: MyCardAttributes[K] } & { [K in keyof MyCard & keyof MyCardAttributes as `prop:${K}`]?: MyCard[K] };
         "my-component": Omit<MyComponent, keyof MyComponentAttributes> & { [K in keyof MyComponent & keyof MyComponentAttributes]?: MyComponent[K] } & { [K in keyof MyComponent & keyof MyComponentAttributes as `attr:${K}`]?: MyComponentAttributes[K] } & { [K in keyof MyComponent & keyof MyComponentAttributes as `prop:${K}`]?: MyComponent[K] };
+        "my-dropdown": Omit<MyDropdown, keyof MyDropdownAttributes> & { [K in keyof MyDropdown & keyof MyDropdownAttributes]?: MyDropdown[K] } & { [K in keyof MyDropdown & keyof MyDropdownAttributes as `attr:${K}`]?: MyDropdownAttributes[K] } & { [K in keyof MyDropdown & keyof MyDropdownAttributes as `prop:${K}`]?: MyDropdown[K] };
+        "my-input": Omit<MyInput, keyof MyInputAttributes> & { [K in keyof MyInput & keyof MyInputAttributes]?: MyInput[K] } & { [K in keyof MyInput & keyof MyInputAttributes as `attr:${K}`]?: MyInputAttributes[K] } & { [K in keyof MyInput & keyof MyInputAttributes as `prop:${K}`]?: MyInput[K] };
+        "my-modal": Omit<MyModal, keyof MyModalAttributes> & { [K in keyof MyModal & keyof MyModalAttributes]?: MyModal[K] } & { [K in keyof MyModal & keyof MyModalAttributes as `attr:${K}`]?: MyModalAttributes[K] } & { [K in keyof MyModal & keyof MyModalAttributes as `prop:${K}`]?: MyModal[K] };
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "my-alert": LocalJSX.IntrinsicElements["my-alert"] & JSXBase.HTMLAttributes<HTMLMyAlertElement>;
             "my-badge": LocalJSX.IntrinsicElements["my-badge"] & JSXBase.HTMLAttributes<HTMLMyBadgeElement>;
             "my-button": LocalJSX.IntrinsicElements["my-button"] & JSXBase.HTMLAttributes<HTMLMyButtonElement>;
             "my-card": LocalJSX.IntrinsicElements["my-card"] & JSXBase.HTMLAttributes<HTMLMyCardElement>;
             "my-component": LocalJSX.IntrinsicElements["my-component"] & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "my-dropdown": LocalJSX.IntrinsicElements["my-dropdown"] & JSXBase.HTMLAttributes<HTMLMyDropdownElement>;
+            "my-input": LocalJSX.IntrinsicElements["my-input"] & JSXBase.HTMLAttributes<HTMLMyInputElement>;
+            "my-modal": LocalJSX.IntrinsicElements["my-modal"] & JSXBase.HTMLAttributes<HTMLMyModalElement>;
         }
     }
 }
