@@ -12,7 +12,7 @@ export interface DropdownOption {
 })
 export class MyDropdown {
   @Prop() options: DropdownOption[] | string = [];
-  @Prop() value: string = '';
+  @Prop({ mutable: true }) value: string = '';
   @Prop() placeholder: string = 'Select an option';
   @Prop() label: string = '';
   @Prop() disabled: boolean = false;
@@ -35,6 +35,7 @@ export class MyDropdown {
   }
 
   private select(value: string) {
+    this.value = value;
     this.myChange.emit(value);
     this.isOpen = false;
   }

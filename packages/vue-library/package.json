@@ -1,6 +1,6 @@
 {
   "name": "@stencil-kit/vue",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "> TODO: description",
   "author": "Anis conceptlz <124657785+anismansuriui@users.noreply.github.com>",
   "homepage": "",
@@ -23,7 +23,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@stencil-kit/core": "^0.0.2"
+    "@stencil-kit/core": "^0.0.3"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
