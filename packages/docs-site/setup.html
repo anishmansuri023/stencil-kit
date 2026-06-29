@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Setup Guide - Stencil Design System</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="/docs-site/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
 </head>
 <body>
@@ -15,15 +15,15 @@
     </div>
     
     <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="components.html">Components</a></li>
+      <li><a href="/docs-site/index.html">Home</a></li>
+      <li><a href="/docs-site/components.html">Components</a></li>
       <li class="nav-section">Framework Guides</li>
-      <li><a href="vanilla.html">Vanilla HTML/JS</a></li>
-      <li><a href="react.html">React</a></li>
-      <li><a href="vue.html">Vue 3</a></li>
-      <li><a href="angular.html">Angular</a></li>
+      <li><a href="/docs-site/vanilla.html">Vanilla HTML/JS</a></li>
+      <li><a href="/docs-site/react.html">React</a></li>
+      <li><a href="/docs-site/vue.html">Vue 3</a></li>
+      <li><a href="/docs-site/angular.html">Angular</a></li>
       <li class="nav-section">Resources</li>
-      <li><a href="setup.html" class="active">Setup Guide</a></li>
+      <li><a href="/docs-site/setup.html" class="active">Setup Guide</a></li>
       <li><a href="#architecture">Architecture</a></li>
     </ul>
   </nav>
@@ -174,9 +174,9 @@ npm run dev</code></pre>
       <div class="code-block">
         <pre><code class="language-bash">my-monorepo/
 ├── packages/
-│   ├── stencil-library/      # Core web components
-│   ├── react-library/         # React wrappers
-│   ├── vue-library/           # Vue wrappers
+│   ├── @stencil-kit/core      # Core web components
+│   ├── @stencil-kit/react/         # React wrappers
+│   ├── @stencil-kit/vue/           # Vue wrappers
 │   ├── angular-workspace/     # Angular wrappers
 │   ├── react-app/             # React demo
 │   ├── vue-app/               # Vue demo
@@ -238,19 +238,19 @@ kill -9 &lt;PID&gt;</code></pre>
     <section class="guide-section">
       <h2>Next Steps</h2>
       <div class="next-steps-grid">
-        <a href="components.html" class="next-step-card">
+        <a href="/docs-site/components.html" class="next-step-card">
           <h3>📦 View Components</h3>
           <p>Explore the component library with live examples</p>
         </a>
-        <a href="vanilla.html" class="next-step-card">
+        <a href="/docs-site/vanilla.html" class="next-step-card">
           <h3>📄 Vanilla HTML/JS</h3>
           <p>Learn how to use components in vanilla JavaScript</p>
         </a>
-        <a href="react.html" class="next-step-card">
+        <a href="/docs-site/react.html" class="next-step-card">
           <h3>⚛️ React Integration</h3>
           <p>Integrate components into your React app</p>
         </a>
-        <a href="vue.html" class="next-step-card">
+        <a href="/docs-site/vue.html" class="next-step-card">
           <h3>💚 Vue Integration</h3>
           <p>Use components in Vue 3 applications</p>
         </a>
@@ -264,6 +264,6 @@ kill -9 &lt;PID&gt;</code></pre>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
-  <script src="./script.js"></script>
+  <script src="/docs-site/script.js"></script>
 </body>
 </html>

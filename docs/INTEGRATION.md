@@ -50,7 +50,7 @@ No installation needed! Just reference the built Stencil library.
 ### CDN Usage (Future)
 
 ```html
-<script type="module" src="https://unpkg.com/your-stencil-library/dist/stencil-library/stencil-library.esm.js"></script>
+<script type="module" src="https://unpkg.com/@stencil-kit/core/dist/stencil-library/stencil-library.esm.js"></script>
 ```
 
 ### JavaScript Interaction
@@ -78,7 +78,7 @@ Use the React wrapper library for type-safe React components.
 
 ### 1. Installation
 
-The React library is already included in the monorepo at `packages/react-library`.
+The React library is at `packages/react-library` (published as `@stencil-kit/react`).
 
 ### 2. Build the Libraries
 
@@ -88,13 +88,13 @@ npm run build
 ```
 
 This builds:
-1. `stencil-library` (core components)
-2. `react-library` (React wrappers)
+1. `@stencil-kit/core` (core components)
+2. `@stencil-kit/react` (React wrappers)
 
 ### 3. Import Components
 
 ```tsx
-import { MyButton, MyCard, MyBadge, MyComponent } from 'react-library';
+import { MyButton, MyCard, MyBadge, MyComponent } from '@stencil-kit/react';
 
 function App() {
   return (
@@ -119,8 +119,8 @@ function App() {
 The React library includes full TypeScript definitions:
 
 ```tsx
-import { MyButton } from 'react-library';
-import type { JSX } from 'react-library';
+import { MyButton } from '@stencil-kit/react';
+import type { JSX } from '@stencil-kit/react';
 
 // Props are fully typed
 const button: JSX.MyButton = {
@@ -133,7 +133,7 @@ const button: JSX.MyButton = {
 ### 5. Event Handling
 
 ```tsx
-import { MyButton } from 'react-library';
+import { MyButton } from '@stencil-kit/react';
 
 function App() {
   const handleClick = () => {
@@ -155,7 +155,7 @@ function App() {
 
 ```bash
 # In your React app
-npm install file:../react-library
+npm install @stencil-kit/react
 ```
 
 Then import and use as shown above.
@@ -168,7 +168,7 @@ Use the Vue wrapper library with the plugin system.
 
 ### 1. Installation
 
-The Vue library is already included in the monorepo at `packages/vue-library`.
+The Vue library is at `packages/vue-library` (published as `@stencil-kit/vue`).
 
 ### 2. Build the Libraries
 
@@ -178,8 +178,8 @@ npm run build
 ```
 
 This builds:
-1. `stencil-library` (core components)
-2. `vue-library` (Vue wrappers)
+1. `@stencil-kit/core` (core components)
+2. `@stencil-kit/vue` (Vue wrappers)
 
 ### 3. Register the Plugin
 
@@ -188,7 +188,7 @@ In your `main.ts`:
 ```typescript
 import { createApp } from 'vue';
 import App from './App.vue';
-import { ComponentLibrary } from 'vue-library';
+import { ComponentLibrary } from '@stencil-kit/vue';
 
 const app = createApp(App);
 
@@ -287,7 +287,7 @@ const buttonText = ref('Click Me');
 
 ```bash
 # In your Vue app
-npm install file:../vue-library
+npm install @stencil-kit/vue
 ```
 
 Then configure as shown above.
@@ -310,7 +310,7 @@ npm run build
 ```
 
 This builds:
-1. `stencil-library` (core components)
+1. `@stencil-kit/core` (core components)
 2. `component-library` (Angular wrappers)
 
 ### 3. Import Components (Standalone)
@@ -319,7 +319,7 @@ For standalone components:
 
 ```typescript
 import { Component } from '@angular/core';
-import { MyComponent } from 'component-library';
+import { MyComponent } from '@stencil-kit/angular';
 
 @Component({
   selector: 'app-root',
@@ -340,7 +340,7 @@ For module-based apps, add `CUSTOM_ELEMENTS_SCHEMA`:
 ```typescript
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MyComponent } from 'component-library';
+import { MyComponent } from '@stencil-kit/angular';
 import { AppComponent } from './app.component';
 
 @NgModule({

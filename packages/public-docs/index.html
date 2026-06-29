@@ -89,22 +89,22 @@
         <a href="/public-docs/react.html" class="framework-card">
           <div class="framework-icon">⚛️</div>
           <h3>React</h3>
-          <p>npm install @your-org/react-library</p>
+          <p>npm install @stencil-kit/react</p>
         </a>
         <a href="/public-docs/vue.html" class="framework-card">
           <div class="framework-icon">💚</div>
           <h3>Vue 3</h3>
-          <p>npm install @your-org/vue-library</p>
+          <p>npm install @stencil-kit/vue</p>
         </a>
         <a href="/public-docs/angular.html" class="framework-card">
           <div class="framework-icon">🅰️</div>
           <h3>Angular</h3>
-          <p>npm install @your-org/angular-library</p>
+          <p>npm install @stencil-kit/angular</p>
         </a>
         <a href="/public-docs/vanilla.html" class="framework-card">
           <div class="framework-icon">📄</div>
           <h3>Vanilla JS</h3>
-          <p>npm install @your-org/stencil-library</p>
+          <p>npm install @stencil-kit/core</p>
         </a>
       </div>
     </section>
@@ -113,6 +113,7 @@
       <h2>Quick Example</h2>
       <p>Here's how easy it is to use our components:</p>
 
+      <div class="code-examples">
       <div class="code-tabs">
         <button class="tab-btn active" onclick="showTab(event, 'example-react')">React</button>
         <button class="tab-btn" onclick="showTab(event, 'example-vue')">Vue</button>
@@ -126,7 +127,7 @@
             <span>React</span>
             <button class="copy-btn" onclick="copyCode(this)">Copy</button>
           </div>
-          <pre><code class="language-tsx">import { MyButton, MyCard } from '@your-org/react-library';
+          <pre><code class="language-tsx">import { MyButton, MyCard } from '@stencil-kit/react';
 
 function App() {
   return (
@@ -179,7 +180,7 @@ function App() {
             <span>Vanilla JS</span>
             <button class="copy-btn" onclick="copyCode(this)">Copy</button>
           </div>
-          <pre><code class="language-html">&lt;script type="module" src="https://unpkg.com/@your-org/stencil-library"&gt;&lt;/script&gt;
+          <pre><code class="language-html">&lt;script type="module" src="https://unpkg.com/@stencil-kit/core"&gt;&lt;/script&gt;
 
 &lt;my-card card-title="Welcome" elevation="medium"&gt;
   &lt;p&gt;Get started with our component library&lt;/p&gt;
@@ -188,6 +189,7 @@ function App() {
   &lt;/div&gt;
 &lt;/my-card&gt;</code></pre>
         </div>
+      </div>
       </div>
     </section>
 
@@ -259,7 +261,7 @@ function App() {
       <p>Built with ❤️ using StencilJS</p>
       <p class="footer-links">
         <a href="https://github.com/your-repo" target="_blank">GitHub</a> •
-        <a href="https://npmjs.com/package/@your-org/stencil-library" target="_blank">npm</a> •
+        <a href="https://npmjs.com/package/@stencil-kit/core" target="_blank">npm</a> •
         <a href="https://twitter.com/your-handle" target="_blank">Twitter</a>
       </p>
     </footer>

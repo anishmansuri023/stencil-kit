@@ -13,7 +13,7 @@
     "allowSyntheticDefaultImports": true,
     "declarationDir": "./dist/types",
     "paths": {
-      "stencil-library/*": ["../../node_modules/stencil-library/*"]
+      "@stencil-kit/core/*": ["../../node_modules/@stencil-kit/core/*"]
     }
   },
   "include": ["lib"],

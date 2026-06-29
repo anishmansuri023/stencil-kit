@@ -1,5 +1,5 @@
 import './assets/main.css'
-import { ComponentLibrary } from 'vue-library';
+import { ComponentLibrary } from '@stencil-kit/vue';
 
 import { createApp } from 'vue'
 import App from './App.vue'

@@ -32,7 +32,7 @@
         }
       }
     },
-    "my-app": {
+    "angular-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -45,22 +45,22 @@
           "standalone": false
         }
       },
-      "root": "projects/my-app",
-      "sourceRoot": "projects/my-app/src",
+      "root": "projects/angular-app",
+      "sourceRoot": "projects/angular-app/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "browser": "projects/my-app/src/main.ts",
-            "tsConfig": "projects/my-app/tsconfig.app.json",
+            "browser": "projects/angular-app/src/main.ts",
+            "tsConfig": "projects/angular-app/tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "projects/my-app/public"
+                "input": "projects/angular-app/public"
               }
             ],
-            "styles": ["projects/my-app/src/styles.css"]
+            "styles": ["projects/angular-app/src/styles.css"]
           },
           "configurations": {
             "production": {
@@ -90,10 +90,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "my-app:build:production"
+              "buildTarget": "angular-app:build:production"
             },
             "development": {
-              "buildTarget": "my-app:build:development"
+              "buildTarget": "angular-app:build:development"
             }
           },
           "defaultConfiguration": "development"

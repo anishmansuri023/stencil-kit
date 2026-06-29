@@ -60,7 +60,7 @@
   &lt;/my-card&gt;
 
   &lt;!-- Load from CDN --&gt;
-  &lt;script type="module" src="https://unpkg.com/@your-org/stencil-library/dist/stencil-library/stencil-library.esm.js"&gt;&lt;/script&gt;
+  &lt;script type="module" src="https://unpkg.com/@stencil-kit/core/dist/stencil-library/stencil-library.esm.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
       </div>
@@ -74,7 +74,7 @@
           <span>Terminal</span>
           <button class="copy-btn" onclick="copyCode(this)">Copy</button>
         </div>
-        <pre><code class="language-bash">npm install @your-org/stencil-library</code></pre>
+        <pre><code class="language-bash">npm install @stencil-kit/core</code></pre>
       </div>
 
       <p>Then import in your JavaScript:</p>
@@ -83,7 +83,7 @@
           <span>main.js</span>
           <button class="copy-btn" onclick="copyCode(this)">Copy</button>
         </div>
-        <pre><code class="language-javascript">import { defineCustomElements } from '@your-org/stencil-library/loader';
+        <pre><code class="language-javascript">import { defineCustomElements } from '@stencil-kit/core/loader';
 
 // Register components
 defineCustomElements();</code></pre>
@@ -193,7 +193,7 @@ document.body.appendChild(button);</code></pre>
     &lt;/my-card&gt;
   &lt;/div&gt;
 
-  &lt;script type="module" src="https://unpkg.com/@your-org/stencil-library/dist/stencil-library/stencil-library.esm.js"&gt;&lt;/script&gt;
+  &lt;script type="module" src="https://unpkg.com/@stencil-kit/core/dist/stencil-library/stencil-library.esm.js"&gt;&lt;/script&gt;
   
   &lt;script type="module"&gt;
     // Wait for components to load

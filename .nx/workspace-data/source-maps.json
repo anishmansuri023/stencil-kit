@@ -1245,6 +1245,176 @@
       "nx/target-defaults"
     ]
   },
+  "packages/tailwind-plugin": {
+    "root": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:tailwindcss": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:tailwind": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:plugin": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:design-system": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:stencil": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.executor": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options.script": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata.scriptContent": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata.runCommand": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "packages/tailwind-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.outputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
   "packages/vue-app": {
     "root": [
       "packages/vue-app/package.json",

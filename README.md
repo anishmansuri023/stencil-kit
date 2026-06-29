@@ -30,16 +30,16 @@ The `npm run docs` command will start the documentation site at:
 ## 📦 What's Included
 
 ### Core Libraries
-- **stencil-library** - Core web components built with StencilJS
-- **react-library** - React wrapper components
-- **vue-library** - Vue 3 wrapper components  
+- **@stencil-kit/core** - Core web components built with StencilJS
+- **@stencil-kit/react** - React wrapper components
+- **@stencil-kit/vue** - Vue 3 wrapper components  
 - **angular-workspace** - Angular standalone components
 
 ### Demo Applications
 - **html-app** - Vanilla HTML/JS integration example
 - **react-app** - React integration example
 - **vue-app** - Vue 3 integration example
-- **angular-workspace/my-app** - Angular integration example
+- **angular-workspace/angular-app** - Angular integration example
 - **docs-site** - Complete documentation website
 
 ## 🎨 Components
@@ -68,7 +68,7 @@ See the [Component Documentation](http://localhost:9000/components.html) for det
 
 ### React
 ```tsx
-import { MyButton } from 'react-library';
+import { MyButton } from '@stencil-kit/react';
 <MyButton variant="primary">Click Me</MyButton>
 ```
 
@@ -119,9 +119,9 @@ Run `npm run docs` and visit http://localhost:9000/ for:
 ```
 my-monorepo/
 ├── packages/
-│   ├── stencil-library/      # Core web components
-│   ├── react-library/         # React wrappers
-│   ├── vue-library/           # Vue wrappers
+│   ├── @stencil-kit/core      # Core web components
+│   ├── @stencil-kit/react/         # React wrappers
+│   ├── @stencil-kit/vue/           # Vue wrappers
 │   ├── angular-workspace/     # Angular wrappers
 │   ├── react-app/             # React demo
 │   ├── vue-app/               # Vue demo
@@ -138,8 +138,8 @@ my-monorepo/
 This project uses **Lerna** with **npm workspaces** for monorepo management and **Nx** for task orchestration with caching.
 
 ### Build Order
-1. `stencil-library` builds first (core components)
-2. `react-library`, `vue-library`, `angular-workspace` build in parallel
+1. `@stencil-kit/core` builds first (core components)
+2. `@stencil-kit/react`, `@stencil-kit/vue`, `angular-workspace` build in parallel
 3. Demo apps can run after libraries are built
 
 ### Caching

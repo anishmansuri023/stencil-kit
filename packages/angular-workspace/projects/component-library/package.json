@@ -1,13 +1,16 @@
 {
-  "name": "component-library",
+  "name": "@stencil-kit/angular",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^21.2.0",
     "@angular/core": "^21.2.0",
-    "stencil-library": "*"
+    "@stencil-kit/core": "*"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  }
 }

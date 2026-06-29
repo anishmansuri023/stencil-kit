@@ -3,7 +3,7 @@
 /* auto-generated vue proxies */
 import { defineContainer, type StencilVueComponent } from '@stencil/vue-output-target/runtime';
 
-import type { JSX } from 'stencil-library';
+import type { JSX } from '@stencil-kit/core';
 
 
 

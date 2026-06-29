@@ -1,13 +1,13 @@
 {
   "name": "angular-workspace",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "dev": "ng serve my-app --port 4200",
+    "dev": "ng serve angular-app --port 4200",
     "start": "ng serve",
-    "build": "ng build component-library && ng build my-app",
+    "build": "ng build component-library && ng build angular-app",
     "build:lib": "ng build component-library",
-    "build:app": "ng build my-app",
+    "build:app": "ng build angular-app",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -20,9 +20,9 @@
     "@angular/forms": "^21.2.0",
     "@angular/platform-browser": "^21.2.0",
     "@angular/router": "^21.2.0",
+    "@stencil-kit/core": "^0.0.1",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-     "stencil-library": "*"
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@angular/build": "^21.2.9",

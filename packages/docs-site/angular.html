@@ -4,22 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Angular - Stencil Design System</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="/docs-site/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
 </head>
 <body>
   <nav class="sidebar">
     <div class="sidebar-header"><h1>🎨 Stencil DS</h1><p class="version">v1.0.0</p></div>
     <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="components.html">Components</a></li>
+      <li><a href="/docs-site/index.html">Home</a></li>
+      <li><a href="/docs-site/components.html">Components</a></li>
       <li class="nav-section">Framework Guides</li>
-      <li><a href="vanilla.html">Vanilla HTML/JS</a></li>
-      <li><a href="react.html">React</a></li>
-      <li><a href="vue.html">Vue 3</a></li>
-      <li><a href="angular.html" class="active">Angular</a></li>
+      <li><a href="/docs-site/vanilla.html">Vanilla HTML/JS</a></li>
+      <li><a href="/docs-site/react.html">React</a></li>
+      <li><a href="/docs-site/vue.html">Vue 3</a></li>
+      <li><a href="/docs-site/angular.html" class="active">Angular</a></li>
       <li class="nav-section">Resources</li>
-      <li><a href="setup.html">Setup Guide</a></li>
+      <li><a href="/docs-site/setup.html">Setup Guide</a></li>
     </ul>
   </nav>
   <main class="content">
@@ -38,7 +38,7 @@
         <div class="code-header"><span>app.module.ts</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
         <pre><code class="language-typescript">import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MyComponent } from 'component-library';
+import { MyComponent } from '@stencil-kit/angular';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -67,6 +67,6 @@ export class AppModule {}</code></pre>
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
-  <script src="./script.js"></script>
+  <script src="/docs-site/script.js"></script>
 </body>
 </html>

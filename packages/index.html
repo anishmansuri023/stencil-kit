@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>@stencil-kit Docs</title>
+  <script>
+    // Redirect to the correct docs based on which port is being served
+    if (location.port === '9001') {
+      location.replace('public-docs/');
+    } else {
+      location.replace('docs-site/');
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting... <a href="docs-site/">docs-site</a> | <a href="public-docs/">public-docs</a></p>
+</body>
+</html>

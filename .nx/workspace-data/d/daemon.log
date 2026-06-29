@@ -1470,3 +1470,695 @@
 [NX v20.8.4 Daemon Server] - 2026-05-06T14:10:44.048Z - Done responding to the client handleRecordTaskRuns
 [NX v20.8.4 Daemon Server] - 2026-05-06T14:10:44.048Z - Handled RECORD_TASK_RUNS. Handling time: 0. Response time: 0.
 [NX v20.8.4 Daemon Server] - 2026-05-06T14:10:44.054Z - Closed a connection. Number of open connections: 0
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:32:52.735Z - Started listening on: /private/var/folders/yz/ykr6xw854wb90dc28yddlb_h0000gn/T/4b3deaaaf8a74bc1fc89/d.sock
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:32:52.736Z - [WATCHER]: Subscribed to changes within: /Users/anis/Sites/designsystem/my-monorepo (native)
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:32:52.739Z - Established a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:32:52.739Z - Established a connection. Number of open connections: 2
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:32:52.740Z - Closed a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:32:52.740Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:32:52.741Z - Done responding to the client Shutdown initiated
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:32:52.741Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:32:52.742Z - [WATCHER]: Stopping the watcher for /Users/anis/Sites/designsystem/my-monorepo (sources)
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:32:52.742Z - Closed a connection. Number of open connections: 0
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:32:52.742Z - [WATCHER]: Stopping the watcher for /Users/anis/Sites/designsystem/my-monorepo (outputs)
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:32:52.742Z - Server stopped because: "Request to shutdown"
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.772Z - Started listening on: /private/var/folders/yz/ykr6xw854wb90dc28yddlb_h0000gn/T/4b3deaaaf8a74bc1fc89/d.sock
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.774Z - [WATCHER]: Subscribed to changes within: /Users/anis/Sites/designsystem/my-monorepo (native)
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.780Z - Established a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.781Z - Established a connection. Number of open connections: 2
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.781Z - Closed a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.782Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.788Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.788Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.788Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.845Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.845Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.846Z - Time taken for 'total for creating and serializing project graph' 63.521292ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.846Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.847Z - Done responding to the client project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.847Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 63. Response time: 2.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.851Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.851Z - Done responding to the client handleContextFileData
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.852Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 1.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.880Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.881Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.881Z - Time taken for 'total for creating and serializing project graph' 0.19854200000000333ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.882Z - Done responding to the client project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.882Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 1.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.885Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.885Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.885Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.885Z - Time taken for 'preTasksExecution' 0.3003330000000233ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.996Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.996Z - Done responding to the client handleHashTasks
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:09.996Z - Handled HASH_TASKS. Handling time: 6. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:10.118Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:10.118Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:10.118Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 83. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.393Z - [WATCHER]: 0 file(s) created or restored, 5 file(s) modified, 0 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.393Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.494Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.494Z - Done responding to the client recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.494Z - Handled RECORD_OUTPUTS_HASH. Handling time: 4. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.495Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.495Z - [REQUEST]: packages/angular-workspace/projects/component-library/src/lib/stencil-generated/components.ts,packages/angular-workspace/projects/component-library/src/lib/stencil-generated/index.ts,packages/vue-library/lib/components.ts,packages/angular-workspace/projects/component-library/src/lib/stencil-generated/angular-component-lib/utils.ts,packages/react-library/lib/components/stencil-generated/components.ts
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.495Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.514Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.514Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.514Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.516Z - Time taken for 'hash changed files from watcher' 0.31479200000012497ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:13.549Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.058Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.080Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.080Z - Done responding to the client recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.080Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.112Z - [WATCHER]: 0 file(s) created or restored, 6 file(s) modified, 0 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.112Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.174Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.174Z - Done responding to the client recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.174Z - Handled RECORD_OUTPUTS_HASH. Handling time: 2. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.211Z - [WATCHER]: 0 file(s) created or restored, 9 file(s) modified, 0 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.211Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.313Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.313Z - [REQUEST]: packages/react-library/dist/index.js.map,packages/react-library/dist/types/index.d.ts,packages/react-library/dist/index.js,packages/react-library/dist/components/stencil-generated/components.js.map,packages/react-library/dist/components/stencil-generated/components.js,packages/react-library/dist/types/components/stencil-generated/components.d.ts,packages/vue-library/dist/components.d.ts,packages/vue-library/dist/plugin.js.map,packages/vue-library/dist/plugin.js,packages/vue-library/dist/index.js,packages/vue-library/dist/components.js.map,packages/vue-library/dist/index.d.ts,packages/vue-library/dist/index.js.map,packages/vue-library/dist/components.js,packages/vue-library/dist/plugin.d.ts
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.313Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.332Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.333Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.333Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.333Z - Time taken for 'hash changed files from watcher' 0.48866699999962293ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:15.734Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:16.090Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:18.109Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.094Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.348Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.349Z - Done responding to the client recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.349Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 1.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.371Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.371Z - Done responding to the client handleRecordTaskRuns
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.371Z - Handled RECORD_TASK_RUNS. Handling time: 0. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.372Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.372Z - Done responding to the client handleGetFlakyTasks
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.372Z - Handled GET_FLAKY_TASKS. Handling time: 1. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.373Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.373Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.373Z - Handled POST_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.373Z - Time taken for 'postTasksExecution' 0.049082999999882304ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.375Z - Closed a connection. Number of open connections: 0
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:19.377Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:42.044Z - [WATCHER]: package-lock.json was modified
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:42.045Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:42.446Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:42.446Z - [REQUEST]: package-lock.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:42.446Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:42.464Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:42.465Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:42.465Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:33:42.465Z - Time taken for 'hash changed files from watcher' 0.29037500000049477ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:29.246Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:29.249Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:29.351Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:29.351Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:29.351Z - [REQUEST]: .claude/settings.local.json.tmp.6673.292668e362e3
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:29.381Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:29.381Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:29.381Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:29.381Z - Time taken for 'hash changed files from watcher' 0.48291699998662807ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:30.067Z - [WATCHER]: package-lock.json was modified
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:30.067Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:30.268Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:30.268Z - [REQUEST]: package-lock.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:30.268Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:30.293Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:30.293Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:30.293Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:30.293Z - Time taken for 'hash changed files from watcher' 0.6742080000112765ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.621Z - Established a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.623Z - Established a connection. Number of open connections: 2
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.623Z - Closed a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.625Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.625Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.626Z - Time taken for 'total for creating and serializing project graph' 0.49012500001117587ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.628Z - Done responding to the client project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.628Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.631Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.632Z - Done responding to the client handleContextFileData
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.632Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 1.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.657Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.657Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.658Z - Time taken for 'total for creating and serializing project graph' 0.3639160000020638ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.660Z - Done responding to the client project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.660Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.663Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.663Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.663Z - Handled PRE_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.663Z - Time taken for 'preTasksExecution' 0.3550000000104774ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.801Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.801Z - Done responding to the client handleHashTasks
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.801Z - Handled HASH_TASKS. Handling time: 19. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.831Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.831Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.831Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.837Z - [REQUEST]: Responding to the client. outputsHashesMatch
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.838Z - Done responding to the client outputsHashesMatch
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.838Z - Handled OUTPUTS_HASHES_MATCH. Handling time: 4. Response time: 1.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.844Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.844Z - Done responding to the client recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.844Z - Handled RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.849Z - [REQUEST]: Responding to the client. outputsHashesMatch
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.849Z - Done responding to the client outputsHashesMatch
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.849Z - Handled OUTPUTS_HASHES_MATCH. Handling time: 3. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.851Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.851Z - Done responding to the client recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:54.851Z - Handled RECORD_OUTPUTS_HASH. Handling time: 2. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.169Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.169Z - Done responding to the client recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.169Z - Handled RECORD_OUTPUTS_HASH. Handling time: 4. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.211Z - [WATCHER]: 0 file(s) created or restored, 6 file(s) modified, 0 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.212Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.232Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.232Z - Done responding to the client recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.232Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.235Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.235Z - Done responding to the client handleRecordTaskRuns
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.235Z - Handled RECORD_TASK_RUNS. Handling time: 1. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.236Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.236Z - Done responding to the client handleGetFlakyTasks
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.236Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.238Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.238Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.238Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.238Z - Time taken for 'postTasksExecution' 0.19945799998822622ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.241Z - Closed a connection. Number of open connections: 0
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.281Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.282Z - [WATCHER]: 0 file(s) created or restored, 9 file(s) modified, 0 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.313Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.313Z - [REQUEST]: packages/react-library/dist/components/stencil-generated/components.js,packages/react-library/dist/components/stencil-generated/components.js.map,packages/react-library/dist/index.js,packages/react-library/dist/types/components/stencil-generated/components.d.ts,packages/react-library/dist/types/index.d.ts,packages/react-library/dist/index.js.map,packages/vue-library/dist/index.js,packages/vue-library/dist/plugin.js.map,packages/vue-library/dist/components.js.map,packages/vue-library/dist/plugin.d.ts,packages/vue-library/dist/plugin.js,packages/vue-library/dist/index.d.ts,packages/vue-library/dist/components.js,packages/vue-library/dist/components.d.ts,packages/vue-library/dist/index.js.map
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.313Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.344Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.344Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.344Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:35:56.344Z - Time taken for 'hash changed files from watcher' 0.9775840000074822ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:36:28.715Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:36:29.037Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:36:29.505Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:37:00.686Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:37:00.689Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:37:00.791Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:37:00.792Z - [REQUEST]: packages/react-app/src/App.tsx
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:37:00.792Z - [REQUEST]: packages/react-app/src/App.tsx.tmp.6673.8349272236bc
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:37:00.834Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:37:00.834Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:37:00.834Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:37:00.836Z - Time taken for 'hash changed files from watcher' 0.5054159999999683ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:37:26.118Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:37:44.020Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:25.125Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 2 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:25.126Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:25.226Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:25.227Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:25.227Z - [REQUEST]: .claude/settings.local.json.tmp.6673.6a9b5deaf663,.claude/settings.local.json.tmp.6673.8d314d3bf0a5
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:25.271Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:25.271Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:25.271Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:25.271Z - Time taken for 'hash changed files from watcher' 0.6791250000242144ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:46.283Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:46.284Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:46.385Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:46.385Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:46.385Z - [REQUEST]: .claude/settings.local.json.tmp.6673.10ee211b2c26
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:46.418Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:46.418Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:46.418Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:39:46.418Z - Time taken for 'hash changed files from watcher' 0.8041670000529848ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:01.781Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 2 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:01.781Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:01.882Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:01.883Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:01.883Z - [REQUEST]: .claude/settings.local.json.tmp.6673.e9f569b0f7b5,.claude/settings.local.json.tmp.6673.34df5b43b8f5
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:01.914Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:01.915Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:01.915Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:01.915Z - Time taken for 'hash changed files from watcher' 0.515625ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:26.933Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:26.935Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:27.036Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:27.036Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:27.036Z - [REQUEST]: .claude/settings.local.json.tmp.6673.cd633645329e
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:27.071Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:27.071Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:27.071Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:27.071Z - Time taken for 'hash changed files from watcher' 0.3479159999988042ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:41.622Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 2 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:41.623Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:41.723Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:41.723Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:41.723Z - [REQUEST]: .claude/settings.local.json.tmp.6673.4b6c12c6302b,.claude/settings.local.json.tmp.6673.b7cf7286382c
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:41.754Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:41.754Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:41.754Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:41.754Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:40:41.754Z - Time taken for 'hash changed files from watcher' 0.30579100002069026ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:43:14.541Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:24.837Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 2 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:24.838Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:24.887Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:24.887Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:24.939Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:24.939Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:24.939Z - [REQUEST]: .claude/settings.local.json.tmp.6673.9af4c748d8a5,.claude/settings.local.json.tmp.6673.b4db17afe678
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:24.969Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:24.969Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:24.969Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:24.969Z - Time taken for 'hash changed files from watcher' 0.4361250000074506ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:53.869Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:53.870Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:53.970Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:53.971Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:53.971Z - [REQUEST]: .claude/settings.local.json.tmp.6673.c0ebcfb43458
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:54.008Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:54.008Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:54.008Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:54.009Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:45:54.009Z - Time taken for 'hash changed files from watcher' 0.3216669999528676ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:44.616Z - [WATCHER]: packages/angular-workspace/projects/my-app was deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:44.617Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:44.819Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:44.819Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:44.819Z - [REQUEST]: packages/angular-workspace/projects/my-app
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:44.842Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:44.842Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:44.842Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:44.842Z - Time taken for 'hash changed files from watcher' 0.20483299996703863ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:48.358Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:48.358Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:48.459Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:48.460Z - [REQUEST]: packages/angular-workspace/angular.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:48.460Z - [REQUEST]: packages/angular-workspace/angular.json.tmp.6673.c690071f2260
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:48.498Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:48.499Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:48.499Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:48.499Z - Time taken for 'hash changed files from watcher' 0.48654200008604676ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:49.400Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:49.400Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:49.500Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:49.500Z - [REQUEST]: packages/angular-workspace/package.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:49.500Z - [REQUEST]: packages/angular-workspace/package.json.tmp.6673.8872edc600d3
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:49.550Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:49.550Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:49.551Z - Time taken for 'hash changed files from watcher' 0.3641670000506565ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:50.119Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:50.119Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:50.220Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:50.220Z - [REQUEST]: packages/angular-workspace/tsconfig.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:50.220Z - [REQUEST]: packages/angular-workspace/tsconfig.json.tmp.6673.78661d0c1510
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:50.256Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:50.257Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:50.257Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:48:50.257Z - Time taken for 'hash changed files from watcher' 0.47020799992606044ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:04.067Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:04.067Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:04.169Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:04.170Z - [REQUEST]: packages/angular-workspace/projects/angular-app/src/app/app.ts
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:04.170Z - [REQUEST]: packages/angular-workspace/projects/angular-app/src/app/app.ts.tmp.6673.084135fbb6d2
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:04.203Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:04.204Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:04.204Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:04.204Z - Time taken for 'hash changed files from watcher' 0.5504159999545664ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:05.489Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:05.490Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:05.590Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:05.590Z - [REQUEST]: packages/angular-workspace/projects/angular-app/src/app/app.spec.ts
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:05.590Z - [REQUEST]: packages/angular-workspace/projects/angular-app/src/app/app.spec.ts.tmp.6673.005866d2a921
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:05.608Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:05.608Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:05.608Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:05.609Z - Time taken for 'hash changed files from watcher' 0.3452500000130385ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:06.256Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:06.257Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:06.357Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:06.357Z - [REQUEST]: packages/angular-workspace/projects/angular-app/src/index.html
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:06.357Z - [REQUEST]: packages/angular-workspace/projects/angular-app/src/index.html.tmp.6673.bb9ebb6f45ac
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:06.378Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:06.378Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:06.378Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:06.378Z - Time taken for 'hash changed files from watcher' 0.25312500004656613ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:23.188Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:23.189Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:23.290Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:23.290Z - [REQUEST]: packages/react-app/index.html
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:23.290Z - [REQUEST]: packages/react-app/index.html.tmp.6673.33b60c99b4ad
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:23.323Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:23.324Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:23.324Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:23.324Z - Time taken for 'hash changed files from watcher' 0.4105409999610856ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:38.916Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:38.921Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:38.984Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:38.985Z - [WATCHER]: 5 file(s) created or restored, 0 file(s) modified, 6 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:39.023Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:39.023Z - [REQUEST]: .claude/settings.local.json,docs/DEVELOPMENT.md,README.md,docs/SETUP.md,docs/ARCHITECTURE.md,docs/README.md
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:39.023Z - [REQUEST]: .claude/settings.local.json.tmp.6673.53e32db8d46b,docs/.!12573!ARCHITECTURE.md,docs/.!12572!README.md,docs/.!12575!ARCHITECTURE.md,docs/.!12573!DEVELOPMENT.md,.!12572!README.md,docs/.!12573!SETUP.md
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:39.057Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:39.057Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:39.057Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:49:39.058Z - Time taken for 'hash changed files from watcher' 0.7617499999469146ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:50:25.905Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:50:26.587Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:50:28.125Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:50:28.215Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:50:29.140Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:50:29.418Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:58:53.248Z - [WATCHER]: 7 file(s) created or restored, 0 file(s) modified, 7 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:58:53.249Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:58:53.351Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:58:53.351Z - [REQUEST]: docs/README.md,README.md,docs/SETUP.md,docs/ARCHITECTURE.md,docs/COMPONENTS.md,docs/INTEGRATION.md,docs/DEVELOPMENT.md
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:58:53.351Z - [REQUEST]: docs/.!12978!INTEGRATION.md,docs/.!12976!COMPONENTS.md,docs/.!12979!SETUP.md,docs/.!12974!README.md,.!12973!README.md,docs/.!12975!ARCHITECTURE.md,docs/.!12977!DEVELOPMENT.md
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:58:53.391Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:58:53.391Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:58:53.391Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:58:53.393Z - Time taken for 'hash changed files from watcher' 1.133000000147149ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:59:16.562Z - [WATCHER]: 16 file(s) created or restored, 0 file(s) modified, 16 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:59:16.563Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:59:16.665Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:59:16.665Z - [REQUEST]: packages/public-docs/angular.html,packages/docs-site/index.html,packages/public-docs/vue.html,packages/docs-site/script.js,packages/docs-site/vanilla.html,packages/docs-site/angular.html,packages/docs-site/vue.html,packages/public-docs/examples.html,packages/public-docs/index.html,packages/public-docs/vanilla.html,packages/public-docs/script.js,packages/public-docs/react.html,packages/docs-site/setup.html,packages/docs-site/components.html,packages/public-docs/components.html,packages/docs-site/react.html
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:59:16.665Z - [REQUEST]: packages/docs-site/.!13057!index.html,packages/docs-site/.!13062!script.js,packages/docs-site/.!13056!components.html,packages/public-docs/.!13054!script.js,packages/public-docs/.!13047!components.html,packages/public-docs/.!13050!index.html,packages/docs-site/.!13061!vue.html,packages/docs-site/.!13059!setup.html,packages/public-docs/.!13052!vanilla.html,packages/public-docs/.!13053!vue.html,packages/docs-site/.!13055!angular.html,packages/docs-site/.!13060!vanilla.html,packages/public-docs/.!13051!react.html,packages/docs-site/.!13058!react.html,packages/public-docs/.!13046!angular.html,packages/public-docs/.!13049!examples.html
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:59:16.691Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:59:16.691Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:59:16.691Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T08:59:16.691Z - Time taken for 'hash changed files from watcher' 1.0290830000303686ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:00:16.426Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:00:16.429Z - [WATCHER]: 19 file(s) created or restored, 0 file(s) modified, 19 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:00:16.480Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:00:16.482Z - [WATCHER]: 4 file(s) created or restored, 0 file(s) modified, 4 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:00:16.534Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:00:16.534Z - [REQUEST]: docs/DEVELOPMENT.md,packages/public-docs/index.html,docs/COMPONENTS.md,packages/public-docs/vanilla.html,docs/README.md,packages/docs-site/components.html,packages/public-docs/examples.html,docs/ARCHITECTURE.md,packages/public-docs/components.html,packages/public-docs/script.js,README.md,packages/docs-site/react.html,docs/INTEGRATION.md,packages/public-docs/vue.html,packages/public-docs/react.html,packages/docs-site/index.html,packages/public-docs/angular.html,docs/SETUP.md,packages/docs-site/angular.html,packages/docs-site/vanilla.html,packages/docs-site/vue.html,packages/docs-site/setup.html,packages/docs-site/script.js
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:00:16.534Z - [REQUEST]: packages/docs-site/.!13100!components.html,packages/docs-site/.!13102!react.html,docs/.!13090!SETUP.md,packages/public-docs/.!13095!react.html,packages/public-docs/.!13092!components.html,docs/.!13087!COMPONENTS.md,docs/.!13086!ARCHITECTURE.md,docs/.!13088!DEVELOPMENT.md,packages/public-docs/.!13094!index.html,packages/public-docs/.!13097!vue.html,.!13084!README.md,packages/public-docs/.!13096!vanilla.html,docs/.!13089!INTEGRATION.md,packages/public-docs/.!13093!examples.html,packages/docs-site/.!13101!index.html,packages/public-docs/.!13098!script.js,packages/docs-site/.!13099!angular.html,packages/public-docs/.!13091!angular.html,docs/.!13085!README.md,packages/docs-site/.!13104!vanilla.html,packages/docs-site/.!13105!vue.html,packages/docs-site/.!13103!setup.html,packages/docs-site/.!13106!script.js
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:00:16.574Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:00:16.574Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:00:16.574Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:00:16.575Z - Time taken for 'hash changed files from watcher' 2.5094580000732094ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:14.995Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:14.996Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:15.098Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:15.098Z - [REQUEST]: CLAUDE.md
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:15.098Z - [REQUEST]: CLAUDE.md.tmp.6673.4a0e778fe3da
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:15.145Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:15.145Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:15.145Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:15.145Z - Time taken for 'hash changed files from watcher' 0.5300000000279397ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:56.166Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:56.169Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 3 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:56.272Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:56.272Z - [REQUEST]: packages/public-docs/angular.html,packages/public-docs/index.html,packages/docs-site/angular.html
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:56.272Z - [REQUEST]: packages/docs-site/.!13382!angular.html,packages/public-docs/.!13382!index.html,packages/public-docs/.!13382!angular.html
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:56.315Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:56.315Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:56.315Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:01:56.316Z - Time taken for 'hash changed files from watcher' 0.932334000011906ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:11:06.951Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:11:06.952Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:11:07.054Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:11:07.055Z - [REQUEST]: packages/docs-site/package.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:11:07.055Z - [REQUEST]: packages/docs-site/package.json.tmp.6673.5008ad8c11d8
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:11:07.106Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:11:07.108Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:11:07.109Z - Time taken for 'hash changed files from watcher' 0.6113749998621643ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:02.976Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:02.978Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:03.081Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:03.081Z - [REQUEST]: packages/index.html
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:03.081Z - [REQUEST]: packages/index.html.tmp.6673.81432186f7af
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:03.126Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:03.126Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:03.126Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:03.128Z - Time taken for 'hash changed files from watcher' 0.4181670001707971ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:16.877Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:16.877Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:16.978Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:16.978Z - [REQUEST]: CLAUDE.md
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:16.978Z - [REQUEST]: CLAUDE.md.tmp.6673.e366d0e57b7e
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:17.012Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:17.012Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:17.012Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:12:17.013Z - Time taken for 'hash changed files from watcher' 0.38070799969136715ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:36.593Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:36.596Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:36.698Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:36.699Z - [REQUEST]: packages/public-docs/index.html
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:36.699Z - [REQUEST]: packages/public-docs/index.html.tmp.6673.79b9795d9911
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:36.738Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:36.738Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:36.738Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:36.739Z - Time taken for 'hash changed files from watcher' 0.5033749998547137ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:43.908Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:43.908Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:44.009Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:44.009Z - [REQUEST]: packages/public-docs/index.html
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:44.009Z - [REQUEST]: packages/public-docs/index.html.tmp.6673.0ad131d3c3bd
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:44.048Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:44.048Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:44.048Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:15:44.050Z - Time taken for 'hash changed files from watcher' 0.36849999986588955ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:17:59.999Z - [WATCHER]: packages/stencil-library/package.json was created or restored
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:00.000Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:00.101Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:00.101Z - [REQUEST]: packages/stencil-library/package.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:00.101Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:00.142Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:00.142Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:00.142Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:00.142Z - Time taken for 'hash changed files from watcher' 0.34354200027883053ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:12.624Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:12.624Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:12.726Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:12.726Z - [REQUEST]: packages/angular-workspace/projects/component-library/package.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:12.727Z - [REQUEST]: packages/angular-workspace/projects/component-library/package.json.tmp.6673.3d06afff9b0e
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:12.778Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:12.779Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:12.779Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:18:12.779Z - Time taken for 'hash changed files from watcher' 0.49470899999141693ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.443Z - Established a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.443Z - Established a connection. Number of open connections: 2
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.443Z - Closed a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.444Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.445Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.445Z - Time taken for 'total for creating and serializing project graph' 0.18158299988135695ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.447Z - Done responding to the client project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.447Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.451Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.451Z - Done responding to the client handleContextFileData
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.451Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.646Z - [WATCHER]: 10 file(s) created or restored, 1 file(s) modified, 10 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.646Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.747Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.747Z - [REQUEST]: packages/vue-library/package.json,packages/react-app/package.json,packages/vue-app/package.json,packages/docs-site/package.json,packages/tailwind-plugin/package.json,packages/angular-workspace/package.json,packages/react-library/package.json,packages/html-app/package.json,packages/public-docs/package.json,packages/stencil-library/package.json,lerna.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.747Z - [REQUEST]: packages/public-docs/package.json.507332545,packages/tailwind-plugin/package.json.455662514,packages/html-app/package.json.1802179720,packages/vue-app/package.json.1117715837,packages/react-app/package.json.953804970,packages/stencil-library/package.json.2657452430,packages/react-library/package.json.3108237652,packages/angular-workspace/package.json.2889723783,packages/vue-library/package.json.222091751,packages/docs-site/package.json.102469396
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.787Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.787Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.787Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:23.788Z - Time taken for 'hash changed files from watcher' 0.7441250002011657ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:24.273Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:24.274Z - Closed a connection. Number of open connections: 0
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:24.274Z - [WATCHER]: Stopping the watcher for /Users/anis/Sites/designsystem/my-monorepo (sources)
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:24.274Z - [WATCHER]: Stopping the watcher for /Users/anis/Sites/designsystem/my-monorepo (outputs)
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:24.281Z - Server stopped because: "LOCK_FILES_CHANGED"
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.620Z - Started listening on: /private/var/folders/yz/ykr6xw854wb90dc28yddlb_h0000gn/T/4b3deaaaf8a74bc1fc89/d.sock
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.622Z - [WATCHER]: Subscribed to changes within: /Users/anis/Sites/designsystem/my-monorepo (native)
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.628Z - Established a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.628Z - Established a connection. Number of open connections: 2
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.629Z - Closed a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.630Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.637Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.637Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.637Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.690Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.690Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.690Z - Time taken for 'total for creating and serializing project graph' 60.23649999999999ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.691Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.692Z - Done responding to the client project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.692Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 60. Response time: 2.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.695Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.695Z - Done responding to the client handleContextFileData
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.695Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.725Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.725Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.725Z - Time taken for 'total for creating and serializing project graph' 0.14083299999998644ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.726Z - Done responding to the client project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.726Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 1.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.729Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.729Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.729Z - Handled PRE_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.729Z - Time taken for 'preTasksExecution' 0.17112500000001774ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.846Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.846Z - Done responding to the client handleHashTasks
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.846Z - Handled HASH_TASKS. Handling time: 8. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.950Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.950Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:38.950Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 74. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.147Z - [WATCHER]: 0 file(s) created or restored, 5 file(s) modified, 0 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.147Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.240Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.241Z - Done responding to the client recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.241Z - Handled RECORD_OUTPUTS_HASH. Handling time: 2. Response time: 1.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.247Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.247Z - [REQUEST]: packages/react-library/lib/components/stencil-generated/components.ts,packages/angular-workspace/projects/component-library/src/lib/stencil-generated/angular-component-lib/utils.ts,packages/angular-workspace/projects/component-library/src/lib/stencil-generated/components.ts,packages/angular-workspace/projects/component-library/src/lib/stencil-generated/index.ts,packages/vue-library/lib/components.ts
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.247Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.264Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.264Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.264Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.265Z - Time taken for 'hash changed files from watcher' 0.177958000000217ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:41.294Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.351Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.720Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.720Z - Done responding to the client recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.720Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.758Z - [WATCHER]: 0 file(s) created or restored, 6 file(s) modified, 0 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.758Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.819Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.819Z - Done responding to the client recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.819Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.853Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.854Z - [WATCHER]: 0 file(s) created or restored, 9 file(s) modified, 0 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.959Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.959Z - [REQUEST]: packages/react-library/dist/components/stencil-generated/components.js,packages/react-library/dist/index.js.map,packages/react-library/dist/types/index.d.ts,packages/react-library/dist/components/stencil-generated/components.js.map,packages/react-library/dist/types/components/stencil-generated/components.d.ts,packages/react-library/dist/index.js,packages/vue-library/dist/index.d.ts,packages/vue-library/dist/plugin.js,packages/vue-library/dist/components.d.ts,packages/vue-library/dist/index.js.map,packages/vue-library/dist/components.js.map,packages/vue-library/dist/index.js,packages/vue-library/dist/plugin.d.ts,packages/vue-library/dist/plugin.js.map,packages/vue-library/dist/components.js
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.959Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.973Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.973Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.973Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:42.973Z - Time taken for 'hash changed files from watcher' 0.32320899999922403ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:43.113Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.243Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.484Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.725Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.725Z - Done responding to the client recordOutputsHash
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.725Z - Handled RECORD_OUTPUTS_HASH. Handling time: 1. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.729Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.729Z - Done responding to the client handleRecordTaskRuns
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.729Z - Handled RECORD_TASK_RUNS. Handling time: 1. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.729Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.729Z - Done responding to the client handleGetFlakyTasks
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.729Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.731Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.731Z - Done responding to the client handleRunPostTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.731Z - Handled POST_TASKS_EXECUTION. Handling time: 0. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.731Z - Time taken for 'postTasksExecution' 0.06445799999983137ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.735Z - Closed a connection. Number of open connections: 0
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:24:44.759Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:27:36.052Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:27:36.055Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:27:36.156Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:27:36.156Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:27:36.156Z - [REQUEST]: .claude/settings.local.json.tmp.6673.248497549202
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:27:36.176Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:27:36.177Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:27:36.177Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:27:36.177Z - Time taken for 'hash changed files from watcher' 0.3787919999740552ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:03.564Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:03.565Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:03.666Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:03.666Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:03.666Z - [REQUEST]: .claude/settings.local.json.tmp.6673.e7da93277c35
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:03.687Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:03.687Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:03.687Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:03.688Z - Time taken for 'hash changed files from watcher' 0.15966699999989942ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:29.729Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:29.730Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:29.831Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:29.831Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:29.831Z - [REQUEST]: .claude/settings.local.json.tmp.6673.34d771fcd85f
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:29.864Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:29.864Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:29.864Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:29.864Z - Time taken for 'hash changed files from watcher' 0.515084000013303ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:50.671Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:50.672Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:50.773Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:50.773Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:50.773Z - [REQUEST]: .claude/settings.local.json.tmp.6673.579ef20e8ae8
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:50.799Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:50.799Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:50.799Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:32:50.799Z - Time taken for 'hash changed files from watcher' 0.2831669999868609ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:33:23.183Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 2 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:33:23.183Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:33:23.235Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:33:23.235Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:33:23.284Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:33:23.284Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:33:23.284Z - [REQUEST]: .claude/settings.local.json.tmp.6673.a39928e50c51,.claude/settings.local.json.tmp.6673.9a8326f7462a,.claude/settings.local.json.tmp.6673.2a99629a8a18
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:33:23.303Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:33:23.303Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:33:23.303Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:33:23.304Z - Time taken for 'hash changed files from watcher' 0.2294589999364689ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:36:30.297Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:36:30.300Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:36:30.401Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:36:30.401Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:36:30.401Z - [REQUEST]: .claude/settings.local.json.tmp.6673.bd8b2e8d2934
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:36:30.431Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:36:30.432Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:36:30.432Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:36:30.432Z - Time taken for 'hash changed files from watcher' 0.5146250000689179ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:38:38.164Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:38:38.164Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:38:38.266Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:38:38.266Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:38:38.267Z - [REQUEST]: .claude/settings.local.json.tmp.6673.0d87f0d142de
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:38:38.301Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:38:38.301Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:38:38.301Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:38:38.302Z - Time taken for 'hash changed files from watcher' 0.5421249999199063ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:39:45.860Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:39:45.863Z - [WATCHER]: 7 file(s) created or restored, 0 file(s) modified, 7 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:39:45.967Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:39:45.967Z - [REQUEST]: packages/docs-site/components.html,packages/docs-site/index.html,packages/docs-site/setup.html,packages/docs-site/angular.html,packages/docs-site/react.html,packages/docs-site/vanilla.html,packages/docs-site/vue.html
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:39:45.967Z - [REQUEST]: packages/docs-site/.!17755!vue.html,packages/docs-site/.!17751!index.html,packages/docs-site/.!17753!setup.html,packages/docs-site/.!17750!components.html,packages/docs-site/.!17752!react.html,packages/docs-site/.!17754!vanilla.html,packages/docs-site/.!17749!angular.html
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:39:46.008Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:39:46.008Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:39:46.008Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:39:46.008Z - Time taken for 'hash changed files from watcher' 1.9748749999562278ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:26.898Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:26.899Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:27.001Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:27.001Z - [REQUEST]: package.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:27.001Z - [REQUEST]: package.json.tmp.6673.268944960f9a
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:27.040Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:27.040Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:27.040Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:27.040Z - Time taken for 'hash changed files from watcher' 0.7679589999606833ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:31.513Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:31.513Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:31.614Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:31.614Z - [REQUEST]: CLAUDE.md
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:31.614Z - [REQUEST]: CLAUDE.md.tmp.6673.c8afbca9d9a0
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:31.651Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:31.651Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:31.651Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:31.651Z - Time taken for 'hash changed files from watcher' 0.4053330000024289ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:56.857Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:57.539Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:58.737Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:58.991Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:41:59.266Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:42:54.284Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:42:54.285Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:42:54.386Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:42:54.386Z - [REQUEST]: .claude/settings.local.json
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:42:54.386Z - [REQUEST]: .claude/settings.local.json.tmp.6673.1fd13248d7f0
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:42:54.419Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:42:54.419Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:42:54.419Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:42:54.420Z - Time taken for 'hash changed files from watcher' 0.5577500001527369ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:47:03.167Z - Established a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:47:03.169Z - Established a connection. Number of open connections: 2
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:47:03.171Z - Closed a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:47:03.173Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:47:03.174Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:47:03.175Z - Time taken for 'total for creating and serializing project graph' 0.45704200002364814ms
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:47:03.176Z - Done responding to the client project-graph
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:47:03.176Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:47:03.181Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:47:03.181Z - Done responding to the client handleContextFileData
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:47:03.181Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-06-29T09:47:03.467Z - Closed a connection. Number of open connections: 0

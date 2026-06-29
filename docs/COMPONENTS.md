@@ -31,7 +31,7 @@ A customizable button component with multiple variants and sizes.
 
 #### React
 ```tsx
-import { MyButton } from 'react-library';
+import { MyButton } from '@stencil-kit/react';
 
 <MyButton variant="primary" size="large">Click Me</MyButton>
 ```
@@ -95,7 +95,7 @@ A card container component with header, content, and footer sections.
 
 #### React
 ```tsx
-import { MyCard, MyButton } from 'react-library';
+import { MyCard, MyButton } from '@stencil-kit/react';
 
 <MyCard cardTitle="Card Title" subtitle="Subtitle" elevation="high">
   <p>Card content goes here</p>
@@ -164,7 +164,7 @@ A status badge component with multiple colors and styles.
 
 #### React
 ```tsx
-import { MyBadge } from 'react-library';
+import { MyBadge } from '@stencil-kit/react';
 
 <MyBadge color="success" size="large">Success</MyBadge>
 <MyBadge color="info" pill>Info</MyBadge>
@@ -220,7 +220,7 @@ Demo component showing basic Stencil functionality.
 
 #### React
 ```tsx
-import { MyComponent } from 'react-library';
+import { MyComponent } from '@stencil-kit/react';
 
 <MyComponent first="John" last="Doe" />
 ```

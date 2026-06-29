@@ -11,7 +11,7 @@ export const config: Config = {
       esmLoaderPath: '../loader',
     },
     angularOutputTarget({
-      componentCorePackage: 'stencil-library',
+      componentCorePackage: '@stencil-kit/core',
       outputType: 'standalone',
       directivesProxyFile: '../angular-workspace/projects/component-library/src/lib/stencil-generated/components.ts',
       directivesArrayFile: '../angular-workspace/projects/component-library/src/lib/stencil-generated/index.ts',
@@ -21,7 +21,7 @@ export const config: Config = {
       outDir: '../react-library/lib/components/stencil-generated/',
     }),
     vueOutputTarget({
-      componentCorePackage: 'stencil-library',
+      componentCorePackage: '@stencil-kit/core',
       proxiesFile: '../vue-library/lib/components.ts',
     }),
     {

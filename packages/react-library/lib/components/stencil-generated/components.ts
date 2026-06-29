@@ -11,11 +11,11 @@ import type { StencilReactComponent } from '@stencil/react-output-target/runtime
 import { createComponent } from '@stencil/react-output-target/runtime';
 import React from 'react';
 
-import type { Components } from "stencil-library/dist/components";
-import { MyBadge as MyBadgeElement, defineCustomElement as defineMyBadge } from "stencil-library/dist/components/my-badge.js";
-import { MyButton as MyButtonElement, defineCustomElement as defineMyButton } from "stencil-library/dist/components/my-button.js";
-import { MyCard as MyCardElement, defineCustomElement as defineMyCard } from "stencil-library/dist/components/my-card.js";
-import { MyComponent as MyComponentElement, defineCustomElement as defineMyComponent } from "stencil-library/dist/components/my-component.js";
+import type { Components } from "@stencil-kit/core/dist/components";
+import { MyBadge as MyBadgeElement, defineCustomElement as defineMyBadge } from "@stencil-kit/core/dist/components/my-badge.js";
+import { MyButton as MyButtonElement, defineCustomElement as defineMyButton } from "@stencil-kit/core/dist/components/my-button.js";
+import { MyCard as MyCardElement, defineCustomElement as defineMyCard } from "@stencil-kit/core/dist/components/my-card.js";
+import { MyComponent as MyComponentElement, defineCustomElement as defineMyComponent } from "@stencil-kit/core/dist/components/my-component.js";
 
 export type MyBadgeEvents = NonNullable<unknown>;
 

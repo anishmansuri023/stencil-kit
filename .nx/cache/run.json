@@ -1,65 +1,54 @@
 {
   "run": {
-    "command": "lerna run dev --parallel --scope={react-app,vue-app,angular-workspace,html-app,docs-site}",
-    "startTime": "2026-05-06T13:45:47.841Z",
-    "endTime": "2026-05-06T14:10:44.046Z",
+    "command": "lerna run build --scope={@stencil-kit/core,@stencil-kit/react,@stencil-kit/vue,angular-workspace}",
+    "startTime": "2026-06-29T09:24:38.848Z",
+    "endTime": "2026-06-29T09:24:44.728Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "angular-workspace:dev",
-      "target": "dev",
+      "taskId": "@stencil-kit/core:build",
+      "target": "build",
+      "projectName": "@stencil-kit/core",
+      "hash": "12531164145785618521",
+      "startTime": "2026-06-29T09:24:38.952Z",
+      "endTime": "2026-06-29T09:24:41.238Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@stencil-kit/react:build",
+      "target": "build",
+      "projectName": "@stencil-kit/react",
+      "hash": "1265367238241779663",
+      "startTime": "2026-06-29T09:24:41.249Z",
+      "endTime": "2026-06-29T09:24:42.716Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@stencil-kit/vue:build",
+      "target": "build",
+      "projectName": "@stencil-kit/vue",
+      "hash": "892086922732913613",
+      "startTime": "2026-06-29T09:24:41.249Z",
+      "endTime": "2026-06-29T09:24:42.815Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "angular-workspace:build",
+      "target": "build",
       "projectName": "angular-workspace",
-      "hash": "5816321498546905662",
-      "startTime": "2026-05-06T13:45:47.874Z",
-      "endTime": "2026-05-06T13:45:49.087Z",
+      "hash": "5068492967229158480",
+      "startTime": "2026-06-29T09:24:41.249Z",
+      "endTime": "2026-06-29T09:24:44.723Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
-    },
-    {
-      "taskId": "html-app:dev",
-      "target": "dev",
-      "projectName": "html-app",
-      "hash": "5785141799030800007",
-      "startTime": "2026-05-06T13:45:47.874Z",
-      "endTime": "2026-05-06T14:10:44.036Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 1
-    },
-    {
-      "taskId": "docs-site:dev",
-      "target": "dev",
-      "projectName": "docs-site",
-      "hash": "3660905316997258509",
-      "startTime": "2026-05-06T13:45:47.874Z",
-      "endTime": "2026-05-06T14:10:44.037Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 1
-    },
-    {
-      "taskId": "react-app:dev",
-      "target": "dev",
-      "projectName": "react-app",
-      "hash": "6105255904083546517",
-      "startTime": "2026-05-06T13:45:47.874Z",
-      "endTime": "2026-05-06T14:10:44.037Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 1
-    },
-    {
-      "taskId": "vue-app:dev",
-      "target": "dev",
-      "projectName": "vue-app",
-      "hash": "16819817926533647869",
-      "startTime": "2026-05-06T13:45:47.874Z",
-      "endTime": "2026-05-06T14:10:44.038Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
     }
   ]
 }

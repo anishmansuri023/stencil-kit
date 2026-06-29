@@ -1,0 +1,27 @@
+{
+  "name": "@your-org/tailwind-plugin",
+  "version": "0.0.1",
+  "description": "Tailwind CSS plugin for Stencil Design System",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --watch"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "keywords": [
+    "tailwindcss",
+    "tailwind",
+    "plugin",
+    "design-system",
+    "stencil"
+  ]
+}

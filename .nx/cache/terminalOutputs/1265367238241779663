@@ -1,0 +1,8 @@
+
+> @stencil-kit/react@0.0.1 build
+> npm run tsc
+
+
+> @stencil-kit/react@0.0.1 tsc
+> tsc -p . --outDir ./dist
+

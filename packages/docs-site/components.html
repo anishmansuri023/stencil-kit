@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Components - Stencil Design System</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="/docs-site/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
 </head>
 <body>
@@ -15,15 +15,15 @@
     </div>
     
     <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="components.html" class="active">Components</a></li>
+      <li><a href="/docs-site/index.html">Home</a></li>
+      <li><a href="/docs-site/components.html" class="active">Components</a></li>
       <li class="nav-section">Framework Guides</li>
-      <li><a href="vanilla.html">Vanilla HTML/JS</a></li>
-      <li><a href="react.html">React</a></li>
-      <li><a href="vue.html">Vue 3</a></li>
-      <li><a href="angular.html">Angular</a></li>
+      <li><a href="/docs-site/vanilla.html">Vanilla HTML/JS</a></li>
+      <li><a href="/docs-site/react.html">React</a></li>
+      <li><a href="/docs-site/vue.html">Vue 3</a></li>
+      <li><a href="/docs-site/angular.html">Angular</a></li>
       <li class="nav-section">Resources</li>
-      <li><a href="setup.html">Setup Guide</a></li>
+      <li><a href="/docs-site/setup.html">Setup Guide</a></li>
       <li><a href="#architecture">Architecture</a></li>
     </ul>
   </nav>
@@ -126,7 +126,7 @@
               <span>React</span>
               <button class="copy-btn" onclick="copyCode(this)">Copy</button>
             </div>
-            <pre><code class="language-tsx">import { MyButton } from 'react-library';
+            <pre><code class="language-tsx">import { MyButton } from '@stencil-kit/react';
 
 function App() {
   return (
@@ -286,7 +286,7 @@ function App() {
               <span>React</span>
               <button class="copy-btn" onclick="copyCode(this)">Copy</button>
             </div>
-            <pre><code class="language-tsx">import { MyCard, MyButton } from 'react-library';
+            <pre><code class="language-tsx">import { MyCard, MyButton } from '@stencil-kit/react';
 
 &lt;MyCard cardTitle="Card Title" subtitle="Subtitle" elevation="high"&gt;
   &lt;p&gt;Card content goes here&lt;/p&gt;
@@ -426,7 +426,7 @@ function App() {
               <span>React</span>
               <button class="copy-btn" onclick="copyCode(this)">Copy</button>
             </div>
-            <pre><code class="language-tsx">import { MyBadge } from 'react-library';
+            <pre><code class="language-tsx">import { MyBadge } from '@stencil-kit/react';
 
 &lt;MyBadge color="success" size="large"&gt;Success&lt;/MyBadge&gt;
 &lt;MyBadge color="info" pill&gt;Info&lt;/MyBadge&gt;</code></pre>
@@ -511,6 +511,6 @@ function App() {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-tsx.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
-  <script src="./script.js"></script>
+  <script src="/docs-site/script.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { MyComponent, MyButton, MyCard, MyBadge } from 'react-library';
+import { MyComponent, MyButton, MyCard, MyBadge } from '@stencil-kit/react';
 
 
 function App() {

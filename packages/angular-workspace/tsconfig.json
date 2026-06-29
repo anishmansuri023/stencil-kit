@@ -4,7 +4,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "component-library": ["./dist/component-library"]
+      "@stencil-kit/angular": ["./dist/component-library"]
     },
     "strict": true,
     "noImplicitOverride": true,
@@ -33,22 +33,22 @@
       "path": "./projects/component-library/tsconfig.spec.json"
     },
     {
-      "path": "./projects/my-app/tsconfig.app.json"
+      "path": "./projects/angular-app/tsconfig.app.json"
     },
     {
-      "path": "./projects/my-app/tsconfig.spec.json"
+      "path": "./projects/angular-app/tsconfig.spec.json"
     },
     {
-      "path": "./projects/my-app/tsconfig.app.json"
+      "path": "./projects/angular-app/tsconfig.app.json"
     },
     {
-      "path": "./projects/my-app/tsconfig.spec.json"
+      "path": "./projects/angular-app/tsconfig.spec.json"
     },
     {
-      "path": "./projects/my-app/tsconfig.app.json"
+      "path": "./projects/angular-app/tsconfig.app.json"
     },
     {
-      "path": "./projects/my-app/tsconfig.spec.json"
+      "path": "./projects/angular-app/tsconfig.spec.json"
     }
   ]
 }

@@ -33,16 +33,16 @@ The `npm run docs` command starts the documentation site at http://localhost:900
 ## 📦 What's Included
 
 ### Core Libraries
-- **stencil-library** - Core web components built with StencilJS
-- **react-library** - React wrapper components
-- **vue-library** - Vue 3 wrapper components  
+- **@stencil-kit/core** - Core web components built with StencilJS
+- **@stencil-kit/react** - React wrapper components
+- **@stencil-kit/vue** - Vue 3 wrapper components  
 - **angular-workspace** - Angular standalone components
 
 ### Demo Applications
 - **html-app** - Vanilla HTML/JS integration example
 - **react-app** - React integration example
 - **vue-app** - Vue 3 integration example
-- **angular-workspace/my-app** - Angular integration example
+- **angular-workspace/angular-app** - Angular integration example
 
 ## 🎨 Components
 
@@ -103,9 +103,9 @@ This project uses **Lerna** with **npm workspaces** for monorepo management and 
 ```
 my-monorepo/
 ├── packages/
-│   ├── stencil-library/      # Core web components
-│   ├── react-library/         # React wrappers
-│   ├── vue-library/           # Vue wrappers
+│   ├── @stencil-kit/core      # Core web components
+│   ├── @stencil-kit/react/         # React wrappers
+│   ├── @stencil-kit/vue/           # Vue wrappers
 │   ├── angular-workspace/     # Angular wrappers
 │   ├── react-app/             # React demo
 │   ├── vue-app/               # Vue demo

@@ -32,7 +32,7 @@ npm run build
 Navigate to the Stencil library:
 
 ```bash
-cd packages/stencil-library
+cd packages/stencil-library # (@stencil-kit/core)
 ```
 
 Create component files:
@@ -98,7 +98,7 @@ Update each demo app to showcase the new component:
 - `packages/html-app/index.html`
 - `packages/react-app/src/App.tsx`
 - `packages/vue-app/src/App.vue`
-- `packages/angular-workspace/projects/my-app/src/app/app.html`
+- `packages/angular-workspace/projects/angular-app/src/app/app.html`
 
 ### 4. Document the Component
 
@@ -181,8 +181,8 @@ npx nx show projects
 
 Lerna automatically builds in dependency order:
 
-1. `stencil-library` (no dependencies)
-2. `react-library`, `vue-library`, `angular-workspace` (depend on stencil-library)
+1. `@stencil-kit/core` (no dependencies)
+2. `@stencil-kit/react`, `@stencil-kit/vue`, `angular-workspace` (depend on stencil-library)
 3. Apps (depend on wrapper libraries)
 
 ## Testing
@@ -194,7 +194,7 @@ Lerna automatically builds in dependency order:
 npm run test
 
 # Run tests for specific package
-cd packages/stencil-library
+cd packages/stencil-library # (@stencil-kit/core)
 npm test
 ```
 

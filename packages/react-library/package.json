@@ -1,6 +1,6 @@
 {
-  "name": "react-library",
-  "version": "0.0.0",
+  "name": "@stencil-kit/react",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "Anis conceptlz <124657785+anismansuriui@users.noreply.github.com>",
   "homepage": "",
@@ -24,7 +24,7 @@
     "tsc": "tsc -p . --outDir ./dist"
   },
   "dependencies": {
-    "stencil-library": "*"
+    "@stencil-kit/core": "^0.0.1"
   },
   "devDependencies": {
     "typescript": "^5.9.3"

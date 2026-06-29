@@ -4,12 +4,12 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, NgZo
 
 import { ProxyCmp } from './angular-component-lib/utils';
 
-import type { Components } from 'stencil-library/components';
+import type { Components } from '@stencil-kit/core/components';
 
-import { defineCustomElement as defineMyBadge } from 'stencil-library/components/my-badge.js';
-import { defineCustomElement as defineMyButton } from 'stencil-library/components/my-button.js';
-import { defineCustomElement as defineMyCard } from 'stencil-library/components/my-card.js';
-import { defineCustomElement as defineMyComponent } from 'stencil-library/components/my-component.js';
+import { defineCustomElement as defineMyBadge } from '@stencil-kit/core/components/my-badge.js';
+import { defineCustomElement as defineMyButton } from '@stencil-kit/core/components/my-button.js';
+import { defineCustomElement as defineMyCard } from '@stencil-kit/core/components/my-card.js';
+import { defineCustomElement as defineMyComponent } from '@stencil-kit/core/components/my-component.js';
 @ProxyCmp({
   defineCustomElementFn: defineMyBadge,
   inputs: ['color', 'pill', 'size']

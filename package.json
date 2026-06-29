@@ -5,9 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build --scope='{stencil-library,react-library,vue-library,angular-workspace}'",
+    "build": "lerna run build --scope='{@stencil-kit/core,@stencil-kit/react,@stencil-kit/vue,angular-workspace}'",
     "build:all": "lerna run build",
-    "build:libs": "lerna run build --scope='{stencil-library,react-library,vue-library}'",
+    "build:libs": "lerna run build --scope='{@stencil-kit/core,@stencil-kit/react,@stencil-kit/vue}'",
     "build:affected": "lerna run build --since=origin/main",
     "test": "lerna run test",
     "clean": "lerna clean -y",
@@ -16,7 +16,7 @@
     "dev:servers": "lerna run dev --parallel --scope='{react-app,vue-app,angular-workspace,html-app}'",
     "dev:open": "./scripts/open-browsers.sh",
     "dev:all": "lerna run dev --parallel",
-    "docs": "cd packages/docs-site && npm run dev",
+    "docs:dev": "cd packages/docs-site && npm run dev",
     "docs:public": "cd packages/public-docs && npm run dev"
   },
   "devDependencies": {

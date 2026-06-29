@@ -32,9 +32,9 @@ npm run build
 ```
 
 This command builds:
-- `stencil-library` - Core web components
-- `react-library` - React wrappers
-- `vue-library` - Vue wrappers
+- `@stencil-kit/core` - Core web components
+- `@stencil-kit/react` - React wrappers
+- `@stencil-kit/vue` - Vue wrappers
 - `angular-workspace` - Angular component library and demo app
 
 **Build Order**: Lerna automatically builds packages in the correct dependency order using Nx task orchestration.
@@ -88,24 +88,24 @@ npm run dev
 ```
 my-monorepo/
 ├── packages/
-│   ├── stencil-library/           # Core Stencil components
+│   ├── @stencil-kit/core           # Core Stencil components
 │   │   ├── src/
 │   │   │   └── components/        # Component source files
 │   │   ├── dist/                  # Built output
 │   │   └── stencil.config.ts      # Stencil configuration
 │   │
-│   ├── react-library/             # React wrappers
+│   ├── @stencil-kit/react/             # React wrappers
 │   │   ├── lib/                   # Wrapper source
 │   │   └── dist/                  # Built output
 │   │
-│   ├── vue-library/               # Vue wrappers
+│   ├── @stencil-kit/vue/               # Vue wrappers
 │   │   ├── lib/                   # Wrapper source
 │   │   └── dist/                  # Built output
 │   │
 │   ├── angular-workspace/         # Angular workspace
 │   │   ├── projects/
 │   │   │   ├── component-library/ # Angular wrappers
-│   │   │   └── my-app/           # Angular demo app
+│   │   │   └── angular-app/           # Angular demo app
 │   │   └── angular.json
 │   │
 │   ├── react-app/                 # React demo app
@@ -161,8 +161,8 @@ Defined in `nx.json`:
 ```
 
 This ensures:
-1. `stencil-library` builds first
-2. `react-library`, `vue-library`, and `angular-workspace` build in parallel after
+1. `@stencil-kit/core` builds first
+2. `@stencil-kit/react`, `@stencil-kit/vue`, and `angular-workspace` build in parallel after
 3. Build outputs are cached
 
 ## Troubleshooting

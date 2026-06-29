@@ -1,0 +1,16 @@
+{
+  "entries": [
+    "components/my-badge/my-badge.js",
+    "components/my-button/my-button.js",
+    "components/my-card/my-card.js",
+    "components/my-component/my-component.js"
+  ],
+  "mixins": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "4.43.5",
+    "typescriptVersion": "5.8.3"
+  },
+  "collections": [],
+  "bundles": []
+}

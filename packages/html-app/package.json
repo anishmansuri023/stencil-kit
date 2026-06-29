@@ -1,6 +1,6 @@
 {
   "name": "html-app",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "npx serve .. -p 3000"
