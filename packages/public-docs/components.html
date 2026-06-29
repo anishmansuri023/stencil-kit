@@ -11,12 +11,20 @@
   <nav class="sidebar">
     <div class="sidebar-header">
       <h1>🎨 Stencil DS</h1>
-      <p class="version">v1.0.0</p>
+      <p class="version">v0.0.2</p>
     </div>
     
     <ul class="nav-menu">
       <li><a href="index.html">Get Started</a></li>
       <li><a href="components.html" class="active">Components</a></li>
+      <li class="nav-section">Components</li>
+      <li><a href="#my-button" style="padding-left:1.5rem;font-size:13px">Button</a></li>
+      <li><a href="#my-badge" style="padding-left:1.5rem;font-size:13px">Badge</a></li>
+      <li><a href="#my-card" style="padding-left:1.5rem;font-size:13px">Card</a></li>
+      <li><a href="#my-input" style="padding-left:1.5rem;font-size:13px">Input</a></li>
+      <li><a href="#my-modal" style="padding-left:1.5rem;font-size:13px">Modal</a></li>
+      <li><a href="#my-dropdown" style="padding-left:1.5rem;font-size:13px">Dropdown</a></li>
+      <li><a href="#my-alert" style="padding-left:1.5rem;font-size:13px">Alert</a></li>
       <li class="nav-section">Installation</li>
       <li><a href="react.html">React</a></li>
       <li><a href="vue.html">Vue 3</a></li>
@@ -24,7 +32,7 @@
       <li><a href="vanilla.html">Vanilla JS</a></li>
       <li class="nav-section">Resources</li>
       <li><a href="examples.html">Examples</a></li>
-      <li><a href="https://github.com/your-repo" target="_blank">GitHub</a></li>
+      <li><a href="https://github.com/anishmansuri023/stencil-kit" target="_blank">GitHub</a></li>
     </ul>
   </nav>
 
@@ -459,6 +467,378 @@ function App() {
       </div>
     </section>
 
+    <!-- MyInput Component -->
+    <section class="component-section" id="my-input">
+      <h2>MyInput</h2>
+      <p class="component-description">A text input field with label, placeholder, error state, and multiple input types.</p>
+
+      <div class="component-demo">
+        <h3>Live Demo</h3>
+        <div class="demo-container">
+          <div class="demo-group" style="display:flex;flex-direction:column;gap:16px;max-width:400px">
+            <my-input label="Name" placeholder="Enter your name"></my-input>
+            <my-input label="Email" type="email" placeholder="you@example.com" required></my-input>
+            <my-input label="Password" type="password" placeholder="••••••••"></my-input>
+            <my-input label="With Error" placeholder="Bad value" error="This field is required"></my-input>
+            <my-input label="Disabled" placeholder="Can't touch this" disabled></my-input>
+          </div>
+        </div>
+      </div>
+
+      <div class="api-table">
+        <h3>Props</h3>
+        <table>
+          <thead><tr><th>Prop</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>label</code></td><td><code>string</code></td><td><code>''</code></td><td>Label above the input</td></tr>
+            <tr><td><code>placeholder</code></td><td><code>string</code></td><td><code>''</code></td><td>Placeholder text</td></tr>
+            <tr><td><code>value</code></td><td><code>string</code></td><td><code>''</code></td><td>Input value</td></tr>
+            <tr><td><code>type</code></td><td><code>'text' | 'email' | 'password' | 'number' | 'tel'</code></td><td><code>'text'</code></td><td>HTML input type</td></tr>
+            <tr><td><code>error</code></td><td><code>string</code></td><td><code>''</code></td><td>Error message shown below</td></tr>
+            <tr><td><code>disabled</code></td><td><code>boolean</code></td><td><code>false</code></td><td>Disabled state</td></tr>
+            <tr><td><code>required</code></td><td><code>boolean</code></td><td><code>false</code></td><td>Shows * on label</td></tr>
+          </tbody>
+        </table>
+        <h3>Events</h3>
+        <table>
+          <thead><tr><th>Event</th><th>Detail</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>myChange</code></td><td><code>string</code></td><td>Fires on every keystroke with the current value</td></tr>
+            <tr><td><code>myBlur</code></td><td><code>void</code></td><td>Fires when input loses focus</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="code-examples">
+        <h3>Usage Examples</h3>
+        <div class="code-tabs">
+          <button class="tab-btn active" onclick="showTab(event, 'input-html')">HTML</button>
+          <button class="tab-btn" onclick="showTab(event, 'input-react')">React</button>
+          <button class="tab-btn" onclick="showTab(event, 'input-vue')">Vue</button>
+          <button class="tab-btn" onclick="showTab(event, 'input-angular')">Angular</button>
+        </div>
+        <div id="input-html" class="tab-content active">
+          <div class="code-block"><div class="code-header"><span>HTML</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-html">&lt;my-input label="Email" type="email" placeholder="you@example.com" required&gt;&lt;/my-input&gt;
+&lt;my-input label="Password" type="password" error="Too short"&gt;&lt;/my-input&gt;</code></pre></div>
+        </div>
+        <div id="input-react" class="tab-content">
+          <div class="code-block"><div class="code-header"><span>React</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-tsx">import { MyInput } from '@stencil-kit/react';
+
+function App() {
+  const [value, setValue] = useState('');
+  return (
+    &lt;MyInput
+      label="Email"
+      type="email"
+      value={value}
+      onMyChange={e =&gt; setValue(e.detail)}
+    /&gt;
+  );
+}</code></pre></div>
+        </div>
+        <div id="input-vue" class="tab-content">
+          <div class="code-block"><div class="code-header"><span>Vue</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-html">&lt;template&gt;
+  &lt;my-input label="Email" type="email" :value="email" @my-change="email = $event.detail" /&gt;
+&lt;/template&gt;</code></pre></div>
+        </div>
+        <div id="input-angular" class="tab-content">
+          <div class="code-block"><div class="code-header"><span>Angular</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-html">&lt;my-input label="Email" type="email" [value]="email" (myChange)="email = $event.detail"&gt;&lt;/my-input&gt;</code></pre></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MyModal Component -->
+    <section class="component-section" id="my-modal">
+      <h2>MyModal</h2>
+      <p class="component-description">A dialog overlay with header, scrollable body, footer slot, and backdrop dismiss.</p>
+
+      <div class="component-demo">
+        <h3>Live Demo</h3>
+        <div class="demo-container">
+          <div class="demo-group">
+            <my-button variant="primary" size="medium" onclick="document.getElementById('demo-modal').open = true">Open Modal</my-button>
+            <my-button variant="secondary" size="medium" onclick="document.getElementById('demo-modal-lg').open = true">Open Large</my-button>
+          </div>
+          <my-modal id="demo-modal" modal-title="Example Modal" size="medium">
+            <p>This is the modal body content. Click the backdrop or ✕ to close.</p>
+            <div slot="footer">
+              <my-button variant="secondary" size="small" onclick="document.getElementById('demo-modal').open = false">Cancel</my-button>
+              <my-button variant="primary" size="small" onclick="document.getElementById('demo-modal').open = false">Confirm</my-button>
+            </div>
+          </my-modal>
+          <my-modal id="demo-modal-lg" modal-title="Large Modal" size="large">
+            <p>A large modal for more content. You can put forms, tables, or anything inside.</p>
+            <div slot="footer">
+              <my-button variant="primary" size="small" onclick="document.getElementById('demo-modal-lg').open = false">Close</my-button>
+            </div>
+          </my-modal>
+        </div>
+      </div>
+
+      <div class="api-table">
+        <h3>Props</h3>
+        <table>
+          <thead><tr><th>Prop</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>open</code></td><td><code>boolean</code></td><td><code>false</code></td><td>Controls visibility</td></tr>
+            <tr><td><code>modal-title</code></td><td><code>string</code></td><td><code>''</code></td><td>Title in the header</td></tr>
+            <tr><td><code>size</code></td><td><code>'small' | 'medium' | 'large'</code></td><td><code>'medium'</code></td><td>Modal width</td></tr>
+          </tbody>
+        </table>
+        <h3>Slots</h3>
+        <table>
+          <thead><tr><th>Slot</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>(default)</code></td><td>Modal body content</td></tr>
+            <tr><td><code>footer</code></td><td>Footer buttons / actions</td></tr>
+          </tbody>
+        </table>
+        <h3>Events</h3>
+        <table>
+          <thead><tr><th>Event</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>myClose</code></td><td>Fires when modal is dismissed</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="code-examples">
+        <h3>Usage Examples</h3>
+        <div class="code-tabs">
+          <button class="tab-btn active" onclick="showTab(event, 'modal-html')">HTML</button>
+          <button class="tab-btn" onclick="showTab(event, 'modal-react')">React</button>
+          <button class="tab-btn" onclick="showTab(event, 'modal-vue')">Vue</button>
+          <button class="tab-btn" onclick="showTab(event, 'modal-angular')">Angular</button>
+        </div>
+        <div id="modal-html" class="tab-content active">
+          <div class="code-block"><div class="code-header"><span>HTML</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-html">&lt;my-button onclick="document.querySelector('my-modal').open = true"&gt;Open&lt;/my-button&gt;
+
+&lt;my-modal modal-title="Confirm Action" size="small"&gt;
+  &lt;p&gt;Are you sure you want to proceed?&lt;/p&gt;
+  &lt;div slot="footer"&gt;
+    &lt;my-button variant="secondary"&gt;Cancel&lt;/my-button&gt;
+    &lt;my-button variant="primary"&gt;Confirm&lt;/my-button&gt;
+  &lt;/div&gt;
+&lt;/my-modal&gt;</code></pre></div>
+        </div>
+        <div id="modal-react" class="tab-content">
+          <div class="code-block"><div class="code-header"><span>React</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-tsx">import { MyModal, MyButton } from '@stencil-kit/react';
+
+function App() {
+  const [open, setOpen] = useState(false);
+  return (
+    &lt;&gt;
+      &lt;MyButton onClick={() =&gt; setOpen(true)}&gt;Open Modal&lt;/MyButton&gt;
+      &lt;MyModal modalTitle="Confirm" open={open} onMyClose={() =&gt; setOpen(false)}&gt;
+        &lt;p&gt;Modal content here&lt;/p&gt;
+        &lt;div slot="footer"&gt;
+          &lt;MyButton variant="primary" onClick={() =&gt; setOpen(false)}&gt;OK&lt;/MyButton&gt;
+        &lt;/div&gt;
+      &lt;/MyModal&gt;
+    &lt;/&gt;
+  );
+}</code></pre></div>
+        </div>
+        <div id="modal-vue" class="tab-content">
+          <div class="code-block"><div class="code-header"><span>Vue</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-html">&lt;template&gt;
+  &lt;my-button @click="open = true"&gt;Open Modal&lt;/my-button&gt;
+  &lt;my-modal modal-title="Confirm" :open="open" @my-close="open = false"&gt;
+    &lt;p&gt;Modal content here&lt;/p&gt;
+    &lt;div slot="footer"&gt;
+      &lt;my-button variant="primary" @click="open = false"&gt;OK&lt;/my-button&gt;
+    &lt;/div&gt;
+  &lt;/my-modal&gt;
+&lt;/template&gt;</code></pre></div>
+        </div>
+        <div id="modal-angular" class="tab-content">
+          <div class="code-block"><div class="code-header"><span>Angular</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-html">&lt;my-button (click)="open = true"&gt;Open Modal&lt;/my-button&gt;
+&lt;my-modal modalTitle="Confirm" [open]="open" (myClose)="open = false"&gt;
+  &lt;p&gt;Modal content here&lt;/p&gt;
+  &lt;div slot="footer"&gt;
+    &lt;my-button variant="primary" (click)="open = false"&gt;OK&lt;/my-button&gt;
+  &lt;/div&gt;
+&lt;/my-modal&gt;</code></pre></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MyDropdown Component -->
+    <section class="component-section" id="my-dropdown">
+      <h2>MyDropdown</h2>
+      <p class="component-description">A custom select dropdown with keyboard-friendly design, label, error state, and disabled support.</p>
+
+      <div class="component-demo">
+        <h3>Live Demo</h3>
+        <div class="demo-container">
+          <div class="demo-group" style="display:flex;flex-direction:column;gap:16px;max-width:360px">
+            <my-dropdown label="Framework" placeholder="Choose a framework" options='[{"label":"React","value":"react"},{"label":"Vue 3","value":"vue"},{"label":"Angular","value":"angular"},{"label":"Vanilla JS","value":"vanilla"}]'></my-dropdown>
+            <my-dropdown label="With Error" placeholder="Select one" options='[{"label":"Option A","value":"a"},{"label":"Option B","value":"b"}]' error="Please select an option"></my-dropdown>
+            <my-dropdown label="Disabled" placeholder="Not available" options='[{"label":"Option A","value":"a"}]' disabled></my-dropdown>
+          </div>
+        </div>
+      </div>
+
+      <div class="api-table">
+        <h3>Props</h3>
+        <table>
+          <thead><tr><th>Prop</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>options</code></td><td><code>Array&lt;{label, value}&gt; | string</code></td><td><code>[]</code></td><td>Dropdown options (JSON string in HTML)</td></tr>
+            <tr><td><code>value</code></td><td><code>string</code></td><td><code>''</code></td><td>Selected value</td></tr>
+            <tr><td><code>placeholder</code></td><td><code>string</code></td><td><code>'Select an option'</code></td><td>Placeholder text</td></tr>
+            <tr><td><code>label</code></td><td><code>string</code></td><td><code>''</code></td><td>Label above the dropdown</td></tr>
+            <tr><td><code>disabled</code></td><td><code>boolean</code></td><td><code>false</code></td><td>Disabled state</td></tr>
+            <tr><td><code>error</code></td><td><code>string</code></td><td><code>''</code></td><td>Error message</td></tr>
+          </tbody>
+        </table>
+        <h3>Events</h3>
+        <table>
+          <thead><tr><th>Event</th><th>Detail</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>myChange</code></td><td><code>string</code></td><td>Selected option value</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="code-examples">
+        <h3>Usage Examples</h3>
+        <div class="code-tabs">
+          <button class="tab-btn active" onclick="showTab(event, 'dropdown-html')">HTML</button>
+          <button class="tab-btn" onclick="showTab(event, 'dropdown-react')">React</button>
+          <button class="tab-btn" onclick="showTab(event, 'dropdown-vue')">Vue</button>
+          <button class="tab-btn" onclick="showTab(event, 'dropdown-angular')">Angular</button>
+        </div>
+        <div id="dropdown-html" class="tab-content active">
+          <div class="code-block"><div class="code-header"><span>HTML</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-html">&lt;my-dropdown
+  label="Framework"
+  options='[{"label":"React","value":"react"},{"label":"Vue","value":"vue"}]'
+&gt;&lt;/my-dropdown&gt;</code></pre></div>
+        </div>
+        <div id="dropdown-react" class="tab-content">
+          <div class="code-block"><div class="code-header"><span>React</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-tsx">import { MyDropdown } from '@stencil-kit/react';
+
+const options = [
+  { label: 'React', value: 'react' },
+  { label: 'Vue', value: 'vue' },
+];
+
+function App() {
+  const [val, setVal] = useState('');
+  return (
+    &lt;MyDropdown
+      label="Framework"
+      options={options}
+      value={val}
+      onMyChange={e =&gt; setVal(e.detail)}
+    /&gt;
+  );
+}</code></pre></div>
+        </div>
+        <div id="dropdown-vue" class="tab-content">
+          <div class="code-block"><div class="code-header"><span>Vue</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-html">&lt;template&gt;
+  &lt;my-dropdown label="Framework" :options="options" :value="val" @my-change="val = $event.detail" /&gt;
+&lt;/template&gt;</code></pre></div>
+        </div>
+        <div id="dropdown-angular" class="tab-content">
+          <div class="code-block"><div class="code-header"><span>Angular</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-html">&lt;my-dropdown label="Framework" [options]="options" [value]="val" (myChange)="val = $event.detail"&gt;&lt;/my-dropdown&gt;</code></pre></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MyAlert Component -->
+    <section class="component-section" id="my-alert">
+      <h2>MyAlert</h2>
+      <p class="component-description">An alert/notification banner with success, warning, error, and info variants. Supports dismissible mode.</p>
+
+      <div class="component-demo">
+        <h3>Live Demo</h3>
+        <div class="demo-container">
+          <div class="demo-group" style="display:flex;flex-direction:column;gap:12px">
+            <my-alert type="success" alert-title="Success!">Your changes have been saved successfully.</my-alert>
+            <my-alert type="warning" alert-title="Warning">Please review before continuing.</my-alert>
+            <my-alert type="error" alert-title="Error">Something went wrong. Please try again.</my-alert>
+            <my-alert type="info" alert-title="Info">This feature is in beta.</my-alert>
+            <my-alert type="success" dismissible>Dismissible — click ✕ to close.</my-alert>
+          </div>
+        </div>
+      </div>
+
+      <div class="api-table">
+        <h3>Props</h3>
+        <table>
+          <thead><tr><th>Prop</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>type</code></td><td><code>'success' | 'warning' | 'error' | 'info'</code></td><td><code>'info'</code></td><td>Alert variant and color</td></tr>
+            <tr><td><code>alert-title</code></td><td><code>string</code></td><td><code>''</code></td><td>Bold title text</td></tr>
+            <tr><td><code>dismissible</code></td><td><code>boolean</code></td><td><code>false</code></td><td>Shows a close ✕ button</td></tr>
+          </tbody>
+        </table>
+        <h3>Slots</h3>
+        <table>
+          <thead><tr><th>Slot</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>(default)</code></td><td>Alert message body</td></tr>
+          </tbody>
+        </table>
+        <h3>Events</h3>
+        <table>
+          <thead><tr><th>Event</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>myDismiss</code></td><td>Fires when the alert is dismissed</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="code-examples">
+        <h3>Usage Examples</h3>
+        <div class="code-tabs">
+          <button class="tab-btn active" onclick="showTab(event, 'alert-html')">HTML</button>
+          <button class="tab-btn" onclick="showTab(event, 'alert-react')">React</button>
+          <button class="tab-btn" onclick="showTab(event, 'alert-vue')">Vue</button>
+          <button class="tab-btn" onclick="showTab(event, 'alert-angular')">Angular</button>
+        </div>
+        <div id="alert-html" class="tab-content active">
+          <div class="code-block"><div class="code-header"><span>HTML</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-html">&lt;my-alert type="success" alert-title="Saved!"&gt;Your changes were saved.&lt;/my-alert&gt;
+&lt;my-alert type="error" alert-title="Error" dismissible&gt;Something went wrong.&lt;/my-alert&gt;</code></pre></div>
+        </div>
+        <div id="alert-react" class="tab-content">
+          <div class="code-block"><div class="code-header"><span>React</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-tsx">import { MyAlert } from '@stencil-kit/react';
+
+&lt;MyAlert type="success" alertTitle="Saved!" dismissible onMyDismiss={() =&gt; console.log('dismissed')}&gt;
+  Your changes were saved.
+&lt;/MyAlert&gt;</code></pre></div>
+        </div>
+        <div id="alert-vue" class="tab-content">
+          <div class="code-block"><div class="code-header"><span>Vue</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-html">&lt;template&gt;
+  &lt;my-alert type="warning" alert-title="Warning" dismissible @my-dismiss="handleDismiss"&gt;
+    Please review before continuing.
+  &lt;/my-alert&gt;
+&lt;/template&gt;</code></pre></div>
+        </div>
+        <div id="alert-angular" class="tab-content">
+          <div class="code-block"><div class="code-header"><span>Angular</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <pre><code class="language-html">&lt;my-alert type="error" alertTitle="Error" [dismissible]="true" (myDismiss)="onDismiss()"&gt;
+  Something went wrong.
+&lt;/my-alert&gt;</code></pre></div>
+        </div>
+      </div>
+    </section>
+
     <!-- MyComponent -->
     <section class="component-section" id="my-component">
       <h2>MyComponent</h2>
@@ -505,7 +885,7 @@ function App() {
     </footer>
   </main>
 
-  <script type="module" src="https://unpkg.com/@stencil-kit/core@0.0.1/dist/stencil-library/stencil-library.esm.js"></script>
+  <script type="module" src="https://unpkg.com/@stencil-kit/core@0.0.2/dist/stencil-library/stencil-library.esm.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>

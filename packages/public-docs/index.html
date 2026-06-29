@@ -11,7 +11,7 @@
   <nav class="sidebar">
     <div class="sidebar-header">
       <h1>🎨 Stencil DS</h1>
-      <p class="version">v1.0.0</p>
+      <p class="version">v0.0.2</p>
     </div>
     
     <ul class="nav-menu">
@@ -24,7 +24,7 @@
       <li><a href="vanilla.html">Vanilla JS</a></li>
       <li class="nav-section">Resources</li>
       <li><a href="examples.html">Examples</a></li>
-      <li><a href="https://github.com/your-repo" target="_blank">GitHub</a></li>
+      <li><a href="https://github.com/anishmansuri023/stencil-kit" target="_blank">GitHub</a></li>
     </ul>
   </nav>
 
@@ -232,6 +232,45 @@ function App() {
         </div>
       </div>
 
+      <div class="showcase-item">
+        <h3>Input</h3>
+        <div class="demo" style="display:flex;flex-direction:column;gap:12px;max-width:360px">
+          <my-input label="Your Name" placeholder="Enter your name"></my-input>
+          <my-input label="Email" type="email" placeholder="you@example.com" required></my-input>
+          <my-input label="With Error" placeholder="Bad value" error="This field is required"></my-input>
+        </div>
+      </div>
+
+      <div class="showcase-item">
+        <h3>Dropdown</h3>
+        <div class="demo" style="max-width:360px">
+          <my-dropdown label="Choose Framework" placeholder="Select one" options='[{"label":"React","value":"react"},{"label":"Vue 3","value":"vue"},{"label":"Angular","value":"angular"},{"label":"Vanilla JS","value":"vanilla"}]'></my-dropdown>
+        </div>
+      </div>
+
+      <div class="showcase-item">
+        <h3>Alert</h3>
+        <div class="demo" style="display:flex;flex-direction:column;gap:10px">
+          <my-alert type="success" alert-title="Success">Your changes were saved.</my-alert>
+          <my-alert type="warning" alert-title="Warning">Please review before continuing.</my-alert>
+          <my-alert type="error" alert-title="Error">Something went wrong.</my-alert>
+          <my-alert type="info" dismissible>This is a dismissible info alert. Click ✕ to close.</my-alert>
+        </div>
+      </div>
+
+      <div class="showcase-item">
+        <h3>Modal</h3>
+        <div class="demo">
+          <my-button variant="primary" onclick="document.getElementById('home-demo-modal').open = true">Open Demo Modal</my-button>
+          <my-modal id="home-demo-modal" modal-title="Welcome to Stencil DS" size="small">
+            <p>This modal is a live web component. Click the backdrop or ✕ to close.</p>
+            <div slot="footer">
+              <my-button variant="primary" size="small" onclick="document.getElementById('home-demo-modal').open = false">Got it</my-button>
+            </div>
+          </my-modal>
+        </div>
+      </div>
+
       <a href="components.html" class="btn btn-primary" style="margin-top: 20px;">View All Components →</a>
     </section>
 
@@ -260,14 +299,14 @@ function App() {
     <footer class="page-footer">
       <p>Built with ❤️ using StencilJS</p>
       <p class="footer-links">
-        <a href="https://github.com/your-repo" target="_blank">GitHub</a> •
+        <a href="https://github.com/anishmansuri023/stencil-kit" target="_blank">GitHub</a> •
         <a href="https://npmjs.com/package/@stencil-kit/core" target="_blank">npm</a> •
         <a href="https://twitter.com/your-handle" target="_blank">Twitter</a>
       </p>
     </footer>
   </main>
 
-  <script type="module" src="https://unpkg.com/@stencil-kit/core@0.0.1/dist/stencil-library/stencil-library.esm.js"></script>
+  <script type="module" src="https://unpkg.com/@stencil-kit/core@0.0.2/dist/stencil-library/stencil-library.esm.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-tsx.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
