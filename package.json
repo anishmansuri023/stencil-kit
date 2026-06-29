@@ -4,9 +4,25 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "build": "lerna run build --scope='{stencil-library,react-library,vue-library,angular-workspace}'",
+    "build:all": "lerna run build",
+    "build:libs": "lerna run build --scope='{stencil-library,react-library,vue-library}'",
+    "build:affected": "lerna run build --since=origin/main",
+    "test": "lerna run test",
+    "clean": "lerna clean -y",
+    "graph": "nx graph",
+    "dev": "run-p dev:servers dev:open",
+    "dev:servers": "lerna run dev --parallel --scope='{react-app,vue-app,angular-workspace,html-app}'",
+    "dev:open": "./scripts/open-browsers.sh",
+    "dev:all": "lerna run dev --parallel",
+    "docs": "cd packages/docs-site && npm run dev",
+    "docs:public": "cd packages/public-docs && npm run dev"
+  },
   "devDependencies": {
     "@types/node": "^25.6.0",
     "lerna": "^8.2.3",
+    "npm-run-all": "^4.1.5",
     "typescript": "^6.0.3"
   }
 }

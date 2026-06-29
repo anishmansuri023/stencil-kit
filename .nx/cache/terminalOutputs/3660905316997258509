@@ -1,0 +1,157 @@
+
+> docs-site@1.0.0 dev
+> npx serve . -p 3001
+
+[45m[1m INFO [22m[49m Accepting connections at http://localhost:3001
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:52 PM[22m [33m::1[39m [36mGET /[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:52 PM[22m [33m::1[39m [32mReturned 200 in 14 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:52 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:52 PM[22m [33m::1[39m [32mReturned 200 in 7 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:52 PM[22m [33m::1[39m [36mGET /stencil-library/dist/stencil-library/stencil-library.esm.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:52 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:52 PM[22m [33m::1[39m [31mReturned 404 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:52 PM[22m [33m::1[39m [32mReturned 200 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:52 PM[22m [33m::1[39m [36mGET /favicon.ico[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:52 PM[22m [33m::1[39m [31mReturned 404 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:57 PM[22m [33m::1[39m [36mGET /components.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:57 PM[22m [33m::1[39m [32mReturned 301 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:57 PM[22m [33m::1[39m [36mGET /components[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:57 PM[22m [33m::1[39m [32mReturned 200 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:57 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:57 PM[22m [33m::1[39m [36mGET /stencil-library/dist/stencil-library/stencil-library.esm.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:57 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:57 PM[22m [33m::1[39m [31mReturned 404 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:57 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:45:57 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:05 PM[22m [33m::1[39m [36mGET /vanilla.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:05 PM[22m [33m::1[39m [32mReturned 301 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:05 PM[22m [33m::1[39m [36mGET /vanilla[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:05 PM[22m [33m::1[39m [32mReturned 200 in 3 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:05 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:05 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:05 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:05 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:21 PM[22m [33m::1[39m [36mGET /react.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:21 PM[22m [33m::1[39m [32mReturned 301 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:21 PM[22m [33m::1[39m [36mGET /react[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:21 PM[22m [33m::1[39m [32mReturned 200 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:21 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:21 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:21 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:21 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:32 PM[22m [33m::1[39m [36mGET /vue.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:32 PM[22m [33m::1[39m [32mReturned 301 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:32 PM[22m [33m::1[39m [36mGET /vue[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:32 PM[22m [33m::1[39m [32mReturned 200 in 3 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:32 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:32 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:32 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:32 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:37 PM[22m [33m::1[39m [36mGET /angular.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:37 PM[22m [33m::1[39m [32mReturned 301 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:37 PM[22m [33m::1[39m [36mGET /angular[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:37 PM[22m [33m::1[39m [32mReturned 200 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:37 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:37 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:37 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:37 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:42 PM[22m [33m::1[39m [36mGET /setup.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:42 PM[22m [33m::1[39m [32mReturned 301 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:42 PM[22m [33m::1[39m [36mGET /setup[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:42 PM[22m [33m::1[39m [32mReturned 200 in 3 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:42 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:42 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:42 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:46:42 PM[22m [33m::1[39m [32mReturned 304 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:57 PM[22m [33m::1[39m [36mGET /index.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:57 PM[22m [33m::1[39m [32mReturned 301 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:57 PM[22m [33m::1[39m [36mGET /index[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:57 PM[22m [33m::1[39m [32mReturned 301 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:57 PM[22m [33m::1[39m [36mGET /[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:57 PM[22m [33m::1[39m [32mReturned 200 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:57 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:57 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:57 PM[22m [33m::1[39m [36mGET /stencil-library/dist/stencil-library/stencil-library.esm.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:57 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:57 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:57 PM[22m [33m::1[39m [31mReturned 404 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:59 PM[22m [33m::1[39m [36mGET /setup.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:59 PM[22m [33m::1[39m [32mReturned 301 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:59 PM[22m [33m::1[39m [36mGET /setup[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:59 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:59 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:59 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:59 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:48:59 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:04 PM[22m [33m::1[39m [36mGET /components.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:04 PM[22m [33m::1[39m [32mReturned 301 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:04 PM[22m [33m::1[39m [36mGET /components[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:04 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:04 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:04 PM[22m [33m::1[39m [36mGET /stencil-library/dist/stencil-library/stencil-library.esm.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:04 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:04 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:04 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:04 PM[22m [33m::1[39m [31mReturned 404 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:19 PM[22m [33m::1[39m [36mGET /angular.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:19 PM[22m [33m::1[39m [32mReturned 301 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:19 PM[22m [33m::1[39m [36mGET /angular[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:19 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:19 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:19 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:19 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:19 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [36mGET /setup.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [32mReturned 301 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [36mGET /setup[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [36mGET /react.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [32mReturned 301 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [36mGET /react[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:23 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [36mGET /vanilla.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [32mReturned 301 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [36mGET /vanilla[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [36mGET /components.html[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [32mReturned 301 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [36mGET /components[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [36mGET /stencil-library/dist/stencil-library/stencil-library.esm.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:49:24 PM[22m [33m::1[39m [31mReturned 404 in 3 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:13 PM[22m [33m::1[39m [36mGET /[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:13 PM[22m [33m::1[39m [32mReturned 304 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:13 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:13 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:13 PM[22m [33m::1[39m [32mReturned 304 in 4 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:13 PM[22m [33m::1[39m [32mReturned 304 in 3 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:13 PM[22m [33m::1[39m [36mGET /stencil-library/dist/stencil-library/stencil-library.esm.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:13 PM[22m [33m::1[39m [31mReturned 404 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:15 PM[22m [33m::1[39m [36mGET /[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:15 PM[22m [33m::1[39m [32mReturned 200 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:15 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:15 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:15 PM[22m [33m::1[39m [32mReturned 200 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:15 PM[22m [33m::1[39m [32mReturned 200 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:15 PM[22m [33m::1[39m [36mGET /styles.css[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:15 PM[22m [33m::1[39m [36mGET /stencil-library/dist/stencil-library/stencil-library.esm.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:15 PM[22m [33m::1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:15 PM[22m [33m::1[39m [36mGET /script.js[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:15 PM[22m [33m::1[39m [32mReturned 304 in 0 ms[39m
+[44m[1m HTTP [22m[49m [2m5/6/2026 5:50:15 PM[22m [33m::1[39m [31mReturned 404 in 2 ms[39m

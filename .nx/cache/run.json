@@ -1,0 +1,65 @@
+{
+  "run": {
+    "command": "lerna run dev --parallel --scope={react-app,vue-app,angular-workspace,html-app,docs-site}",
+    "startTime": "2026-05-06T13:45:47.841Z",
+    "endTime": "2026-05-06T14:10:44.046Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "angular-workspace:dev",
+      "target": "dev",
+      "projectName": "angular-workspace",
+      "hash": "5816321498546905662",
+      "startTime": "2026-05-06T13:45:47.874Z",
+      "endTime": "2026-05-06T13:45:49.087Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "html-app:dev",
+      "target": "dev",
+      "projectName": "html-app",
+      "hash": "5785141799030800007",
+      "startTime": "2026-05-06T13:45:47.874Z",
+      "endTime": "2026-05-06T14:10:44.036Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "docs-site:dev",
+      "target": "dev",
+      "projectName": "docs-site",
+      "hash": "3660905316997258509",
+      "startTime": "2026-05-06T13:45:47.874Z",
+      "endTime": "2026-05-06T14:10:44.037Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "react-app:dev",
+      "target": "dev",
+      "projectName": "react-app",
+      "hash": "6105255904083546517",
+      "startTime": "2026-05-06T13:45:47.874Z",
+      "endTime": "2026-05-06T14:10:44.037Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "vue-app:dev",
+      "target": "dev",
+      "projectName": "vue-app",
+      "hash": "16819817926533647869",
+      "startTime": "2026-05-06T13:45:47.874Z",
+      "endTime": "2026-05-06T14:10:44.038Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

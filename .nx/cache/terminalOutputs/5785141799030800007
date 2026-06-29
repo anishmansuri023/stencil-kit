@@ -1,0 +1,5 @@
+
+> html-app@1.0.0 dev
+> npx serve .. -p 3000
+
+[45m[1m INFO [22m[49m Accepting connections at http://localhost:55207

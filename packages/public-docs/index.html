@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stencil Design System - Get Started</title>
+  <link rel="stylesheet" href="/public-docs/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h1>🎨 Stencil DS</h1>
+      <p class="version">v1.0.0</p>
+    </div>
+    
+    <ul class="nav-menu">
+      <li><a href="/public-docs/index.html" class="active">Get Started</a></li>
+      <li><a href="/public-docs/components.html">Components</a></li>
+      <li class="nav-section">Installation</li>
+      <li><a href="/public-docs/react.html">React</a></li>
+      <li><a href="/public-docs/vue.html">Vue 3</a></li>
+      <li><a href="/public-docs/angular.html">Angular</a></li>
+      <li><a href="/public-docs/vanilla.html">Vanilla JS</a></li>
+      <li class="nav-section">Resources</li>
+      <li><a href="/public-docs/examples.html">Examples</a></li>
+      <li><a href="https://github.com/your-repo" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <header class="page-header">
+      <h1>Stencil Design System</h1>
+      <p class="subtitle">Framework-agnostic web components for modern applications</p>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Build Beautiful UIs Faster</h2>
+        <p>A lightweight, accessible component library that works with React, Vue, Angular, or vanilla JavaScript. Install once, use everywhere.</p>
+        <div class="cta-buttons">
+          <a href="#installation" class="btn btn-primary">Get Started</a>
+          <a href="/public-docs/components.html" class="btn btn-secondary">View Components</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Why Choose Stencil Design System?</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Framework Agnostic</h3>
+          <p>Works seamlessly with React, Vue, Angular, or vanilla JavaScript. No lock-in.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Tiny Bundle Size</h3>
+          <p>Only ~15KB gzipped for the entire library. Lazy-loaded components.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">♿</div>
+          <h3>Accessible</h3>
+          <p>WCAG compliant components with keyboard navigation and screen reader support.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Customizable</h3>
+          <p>CSS custom properties for easy theming. Style to match your brand.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>High Performance</h3>
+          <p>Built with StencilJS for optimal runtime performance and small footprint.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📘</div>
+          <h3>TypeScript First</h3>
+          <p>Full TypeScript support with auto-generated type definitions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide-section" id="installation">
+      <h2>Installation</h2>
+      <p>Choose your framework and follow the installation guide:</p>
+
+      <div class="framework-grid">
+        <a href="/public-docs/react.html" class="framework-card">
+          <div class="framework-icon">⚛️</div>
+          <h3>React</h3>
+          <p>npm install @your-org/react-library</p>
+        </a>
+        <a href="/public-docs/vue.html" class="framework-card">
+          <div class="framework-icon">💚</div>
+          <h3>Vue 3</h3>
+          <p>npm install @your-org/vue-library</p>
+        </a>
+        <a href="/public-docs/angular.html" class="framework-card">
+          <div class="framework-icon">🅰️</div>
+          <h3>Angular</h3>
+          <p>npm install @your-org/angular-library</p>
+        </a>
+        <a href="/public-docs/vanilla.html" class="framework-card">
+          <div class="framework-icon">📄</div>
+          <h3>Vanilla JS</h3>
+          <p>npm install @your-org/stencil-library</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <h2>Quick Example</h2>
+      <p>Here's how easy it is to use our components:</p>
+
+      <div class="code-tabs">
+        <button class="tab-btn active" onclick="showTab(event, 'example-react')">React</button>
+        <button class="tab-btn" onclick="showTab(event, 'example-vue')">Vue</button>
+        <button class="tab-btn" onclick="showTab(event, 'example-angular')">Angular</button>
+        <button class="tab-btn" onclick="showTab(event, 'example-vanilla')">Vanilla JS</button>
+      </div>
+
+      <div id="example-react" class="tab-content active">
+        <div class="code-block">
+          <div class="code-header">
+            <span>React</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <pre><code class="language-tsx">import { MyButton, MyCard } from '@your-org/react-library';
+
+function App() {
+  return (
+    &lt;MyCard cardTitle="Welcome" elevation="medium"&gt;
+      &lt;p&gt;Get started with our component library&lt;/p&gt;
+      &lt;div slot="footer"&gt;
+        &lt;MyButton variant="primary"&gt;Get Started&lt;/MyButton&gt;
+      &lt;/div&gt;
+    &lt;/MyCard&gt;
+  );
+}</code></pre>
+        </div>
+      </div>
+
+      <div id="example-vue" class="tab-content">
+        <div class="code-block">
+          <div class="code-header">
+            <span>Vue 3</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <pre><code class="language-html">&lt;template&gt;
+  &lt;my-card card-title="Welcome" elevation="medium"&gt;
+    &lt;p&gt;Get started with our component library&lt;/p&gt;
+    &lt;div slot="footer"&gt;
+      &lt;my-button variant="primary"&gt;Get Started&lt;/my-button&gt;
+    &lt;/div&gt;
+  &lt;/my-card&gt;
+&lt;/template&gt;</code></pre>
+        </div>
+      </div>
+
+      <div id="example-angular" class="tab-content">
+        <div class="code-block">
+          <div class="code-header">
+            <span>Angular</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <pre><code class="language-html">&lt;my-card cardTitle="Welcome" elevation="medium"&gt;
+  &lt;p&gt;Get started with our component library&lt;/p&gt;
+  &lt;div slot="footer"&gt;
+    &lt;my-button variant="primary"&gt;Get Started&lt;/my-button&gt;
+  &lt;/div&gt;
+&lt;/my-card&gt;</code></pre>
+        </div>
+      </div>
+
+      <div id="example-vanilla" class="tab-content">
+        <div class="code-block">
+          <div class="code-header">
+            <span>Vanilla JS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <pre><code class="language-html">&lt;script type="module" src="https://unpkg.com/@your-org/stencil-library"&gt;&lt;/script&gt;
+
+&lt;my-card card-title="Welcome" elevation="medium"&gt;
+  &lt;p&gt;Get started with our component library&lt;/p&gt;
+  &lt;div slot="footer"&gt;
+    &lt;my-button variant="primary"&gt;Get Started&lt;/my-button&gt;
+  &lt;/div&gt;
+&lt;/my-card&gt;</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="component-showcase">
+      <h2>Component Preview</h2>
+      <p>Try our components live:</p>
+      
+      <div class="showcase-item">
+        <h3>Buttons</h3>
+        <div class="demo">
+          <my-button variant="primary" size="small">Small</my-button>
+          <my-button variant="primary" size="medium">Medium</my-button>
+          <my-button variant="primary" size="large">Large</my-button>
+          <my-button variant="secondary" size="medium">Secondary</my-button>
+          <my-button variant="danger" size="medium">Danger</my-button>
+        </div>
+      </div>
+
+      <div class="showcase-item">
+        <h3>Badges</h3>
+        <div class="demo">
+          <my-badge color="success">Success</my-badge>
+          <my-badge color="warning">Warning</my-badge>
+          <my-badge color="error">Error</my-badge>
+          <my-badge color="info" pill>Info Pill</my-badge>
+          <my-badge color="neutral" pill>Neutral</my-badge>
+        </div>
+      </div>
+
+      <div class="showcase-item">
+        <h3>Card</h3>
+        <div class="demo">
+          <my-card card-title="Example Card" subtitle="With all features" elevation="medium" style="max-width: 400px;">
+            <p>Cards are perfect for grouping related content. They support headers, footers, and multiple elevation levels.</p>
+            <div slot="footer">
+              <my-button variant="primary" size="small">Learn More</my-button>
+              <my-badge color="success" size="small">New</my-badge>
+            </div>
+          </my-card>
+        </div>
+      </div>
+
+      <a href="/public-docs/components.html" class="btn btn-primary" style="margin-top: 20px;">View All Components →</a>
+    </section>
+
+    <section class="guide-section">
+      <h2>Next Steps</h2>
+      <div class="next-steps-grid">
+        <a href="/public-docs/components.html" class="next-step-card">
+          <h3>📦 Browse Components</h3>
+          <p>Explore all available components with live examples and API docs</p>
+        </a>
+        <a href="/public-docs/react.html" class="next-step-card">
+          <h3>⚛️ React Guide</h3>
+          <p>Learn how to integrate components in your React application</p>
+        </a>
+        <a href="/public-docs/vue.html" class="next-step-card">
+          <h3>💚 Vue Guide</h3>
+          <p>Set up components in your Vue 3 project</p>
+        </a>
+        <a href="/public-docs/examples.html" class="next-step-card">
+          <h3>💡 View Examples</h3>
+          <p>See real-world examples and common patterns</p>
+        </a>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <p>Built with ❤️ using StencilJS</p>
+      <p class="footer-links">
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a> •
+        <a href="https://npmjs.com/package/@your-org/stencil-library" target="_blank">npm</a> •
+        <a href="https://twitter.com/your-handle" target="_blank">Twitter</a>
+      </p>
+    </footer>
+  </main>
+
+  <script type="module" src="/stencil-library/dist/stencil-library/stencil-library.esm.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-tsx.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+  <script src="/public-docs/script.js"></script>
+</body>
+</html>

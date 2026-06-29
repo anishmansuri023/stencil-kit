@@ -1,0 +1,13 @@
+
+> angular-workspace@0.0.0 dev
+> ng serve my-app --port 4200
+
+[1m[31mAn unhandled exception occurred: Port 4200 is already in use. Use '--port' to specify a different port.
+See "/private/var/folders/yz/ykr6xw854wb90dc28yddlb_h0000gn/T/ng-r4zHfs/angular-errors.log" for further details.[39m[22m
+npm error Lifecycle script `dev` failed with error:
+npm error code 127
+npm error path /Users/anis/Sites/designsystem/my-monorepo/packages/angular-workspace
+npm error workspace angular-workspace@0.0.0
+npm error location /Users/anis/Sites/designsystem/my-monorepo/packages/angular-workspace
+npm error command failed
+npm error command sh -c ng serve my-app --port 4200

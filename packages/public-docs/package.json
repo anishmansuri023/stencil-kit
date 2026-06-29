@@ -1,0 +1,9 @@
+{
+  "name": "public-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public-facing documentation for end users",
+  "scripts": {
+    "dev": "npx serve .. -p 9001"
+  }
+}

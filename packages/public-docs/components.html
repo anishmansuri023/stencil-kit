@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Components - Stencil Design System</title>
+  <link rel="stylesheet" href="/public-docs/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h1>🎨 Stencil DS</h1>
+      <p class="version">v1.0.0</p>
+    </div>
+    
+    <ul class="nav-menu">
+      <li><a href="/public-docs/index.html">Get Started</a></li>
+      <li><a href="/public-docs/components.html" class="active">Components</a></li>
+      <li class="nav-section">Installation</li>
+      <li><a href="/public-docs/react.html">React</a></li>
+      <li><a href="/public-docs/vue.html">Vue 3</a></li>
+      <li><a href="/public-docs/angular.html">Angular</a></li>
+      <li><a href="/public-docs/vanilla.html">Vanilla JS</a></li>
+      <li class="nav-section">Resources</li>
+      <li><a href="/public-docs/examples.html">Examples</a></li>
+      <li><a href="https://github.com/your-repo" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <header class="page-header">
+      <h1>Component Library</h1>
+      <p class="subtitle">Complete API reference with live examples</p>
+    </header>
+
+    <!-- MyButton Component -->
+    <section class="component-section" id="my-button">
+      <h2>MyButton</h2>
+      <p class="component-description">A customizable button component with multiple variants and sizes.</p>
+
+      <div class="component-demo">
+        <h3>Live Demo</h3>
+        <div class="demo-container">
+          <div class="demo-group">
+            <h4>Variants</h4>
+            <my-button variant="primary" size="medium">Primary</my-button>
+            <my-button variant="secondary" size="medium">Secondary</my-button>
+            <my-button variant="danger" size="medium">Danger</my-button>
+          </div>
+          
+          <div class="demo-group">
+            <h4>Sizes</h4>
+            <my-button variant="primary" size="small">Small</my-button>
+            <my-button variant="primary" size="medium">Medium</my-button>
+            <my-button variant="primary" size="large">Large</my-button>
+          </div>
+          
+          <div class="demo-group">
+            <h4>States</h4>
+            <my-button variant="primary" size="medium">Enabled</my-button>
+            <my-button variant="primary" size="medium" disabled>Disabled</my-button>
+          </div>
+        </div>
+      </div>
+
+      <div class="api-table">
+        <h3>Props</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Prop</th>
+              <th>Type</th>
+              <th>Default</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>variant</code></td>
+              <td><code>'primary' | 'secondary' | 'danger'</code></td>
+              <td><code>'primary'</code></td>
+              <td>Button style variant</td>
+            </tr>
+            <tr>
+              <td><code>size</code></td>
+              <td><code>'small' | 'medium' | 'large'</code></td>
+              <td><code>'medium'</code></td>
+              <td>Button size</td>
+            </tr>
+            <tr>
+              <td><code>disabled</code></td>
+              <td><code>boolean</code></td>
+              <td><code>false</code></td>
+              <td>Disabled state</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="code-examples">
+        <h3>Usage Examples</h3>
+        
+        <div class="code-tabs">
+          <button class="tab-btn active" onclick="showTab(event, 'button-html')">HTML</button>
+          <button class="tab-btn" onclick="showTab(event, 'button-react')">React</button>
+          <button class="tab-btn" onclick="showTab(event, 'button-vue')">Vue</button>
+          <button class="tab-btn" onclick="showTab(event, 'button-angular')">Angular</button>
+        </div>
+
+        <div id="button-html" class="tab-content active">
+          <div class="code-block">
+            <div class="code-header">
+              <span>HTML</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre><code class="language-html">&lt;my-button variant="primary" size="medium"&gt;Click Me&lt;/my-button&gt;
+&lt;my-button variant="secondary" size="small"&gt;Secondary&lt;/my-button&gt;
+&lt;my-button variant="danger" disabled&gt;Disabled&lt;/my-button&gt;</code></pre>
+          </div>
+        </div>
+
+        <div id="button-react" class="tab-content">
+          <div class="code-block">
+            <div class="code-header">
+              <span>React</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre><code class="language-tsx">import { MyButton } from 'react-library';
+
+function App() {
+  return (
+    &lt;&gt;
+      &lt;MyButton variant="primary" size="medium"&gt;Click Me&lt;/MyButton&gt;
+      &lt;MyButton variant="secondary" size="small"&gt;Secondary&lt;/MyButton&gt;
+      &lt;MyButton variant="danger" disabled&gt;Disabled&lt;/MyButton&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+          </div>
+        </div>
+
+        <div id="button-vue" class="tab-content">
+          <div class="code-block">
+            <div class="code-header">
+              <span>Vue</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre><code class="language-html">&lt;template&gt;
+  &lt;my-button variant="primary" size="medium"&gt;Click Me&lt;/my-button&gt;
+  &lt;my-button variant="secondary" size="small"&gt;Secondary&lt;/my-button&gt;
+  &lt;my-button variant="danger" disabled&gt;Disabled&lt;/my-button&gt;
+&lt;/template&gt;</code></pre>
+          </div>
+        </div>
+
+        <div id="button-angular" class="tab-content">
+          <div class="code-block">
+            <div class="code-header">
+              <span>Angular</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre><code class="language-html">&lt;my-button variant="primary" size="medium"&gt;Click Me&lt;/my-button&gt;
+&lt;my-button variant="secondary" size="small"&gt;Secondary&lt;/my-button&gt;
+&lt;my-button variant="danger" [disabled]="true"&gt;Disabled&lt;/my-button&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MyCard Component -->
+    <section class="component-section" id="my-card">
+      <h2>MyCard</h2>
+      <p class="component-description">A card container component with header, content, and footer sections.</p>
+
+      <div class="component-demo">
+        <h3>Live Demo</h3>
+        <div class="demo-container">
+          <div class="demo-group" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            <my-card card-title="Low Elevation" subtitle="Subtle shadow" elevation="low">
+              <p>Card with low elevation</p>
+              <div slot="footer">
+                <my-button variant="primary" size="small">Action</my-button>
+              </div>
+            </my-card>
+
+            <my-card card-title="Medium Elevation" subtitle="Standard shadow" elevation="medium">
+              <p>Card with medium elevation</p>
+              <div slot="footer">
+                <my-button variant="secondary" size="small">Action</my-button>
+              </div>
+            </my-card>
+
+            <my-card card-title="High Elevation" subtitle="Prominent shadow" elevation="high">
+              <p>Card with high elevation</p>
+              <div slot="footer">
+                <my-button variant="danger" size="small">Action</my-button>
+              </div>
+            </my-card>
+          </div>
+        </div>
+      </div>
+
+      <div class="api-table">
+        <h3>Props</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Prop</th>
+              <th>Type</th>
+              <th>Default</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>cardTitle</code></td>
+              <td><code>string</code></td>
+              <td><code>undefined</code></td>
+              <td>Card title text</td>
+            </tr>
+            <tr>
+              <td><code>subtitle</code></td>
+              <td><code>string</code></td>
+              <td><code>undefined</code></td>
+              <td>Card subtitle text</td>
+            </tr>
+            <tr>
+              <td><code>elevation</code></td>
+              <td><code>'low' | 'medium' | 'high'</code></td>
+              <td><code>'medium'</code></td>
+              <td>Shadow depth/elevation</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Slots</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Slot</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>(default)</code></td>
+              <td>Main card content</td>
+            </tr>
+            <tr>
+              <td><code>footer</code></td>
+              <td>Card footer content</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="code-examples">
+        <h3>Usage Examples</h3>
+        
+        <div class="code-tabs">
+          <button class="tab-btn active" onclick="showTab(event, 'card-html')">HTML</button>
+          <button class="tab-btn" onclick="showTab(event, 'card-react')">React</button>
+          <button class="tab-btn" onclick="showTab(event, 'card-vue')">Vue</button>
+          <button class="tab-btn" onclick="showTab(event, 'card-angular')">Angular</button>
+        </div>
+
+        <div id="card-html" class="tab-content active">
+          <div class="code-block">
+            <div class="code-header">
+              <span>HTML</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre><code class="language-html">&lt;my-card card-title="Card Title" subtitle="Subtitle" elevation="medium"&gt;
+  &lt;p&gt;Card content goes here&lt;/p&gt;
+  &lt;div slot="footer"&gt;
+    &lt;my-button variant="primary"&gt;Action&lt;/my-button&gt;
+  &lt;/div&gt;
+&lt;/my-card&gt;</code></pre>
+          </div>
+        </div>
+
+        <div id="card-react" class="tab-content">
+          <div class="code-block">
+            <div class="code-header">
+              <span>React</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre><code class="language-tsx">import { MyCard, MyButton } from 'react-library';
+
+&lt;MyCard cardTitle="Card Title" subtitle="Subtitle" elevation="high"&gt;
+  &lt;p&gt;Card content goes here&lt;/p&gt;
+  &lt;div slot="footer"&gt;
+    &lt;MyButton variant="primary"&gt;Action&lt;/MyButton&gt;
+  &lt;/div&gt;
+&lt;/MyCard&gt;</code></pre>
+          </div>
+        </div>
+
+        <div id="card-vue" class="tab-content">
+          <div class="code-block">
+            <div class="code-header">
+              <span>Vue</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre><code class="language-html">&lt;template&gt;
+  &lt;my-card card-title="Card Title" subtitle="Subtitle" elevation="medium"&gt;
+    &lt;p&gt;Card content goes here&lt;/p&gt;
+    &lt;div slot="footer"&gt;
+      &lt;my-button variant="primary"&gt;Action&lt;/my-button&gt;
+    &lt;/div&gt;
+  &lt;/my-card&gt;
+&lt;/template&gt;</code></pre>
+          </div>
+        </div>
+
+        <div id="card-angular" class="tab-content">
+          <div class="code-block">
+            <div class="code-header">
+              <span>Angular</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre><code class="language-html">&lt;my-card cardTitle="Card Title" subtitle="Subtitle" elevation="medium"&gt;
+  &lt;p&gt;Card content goes here&lt;/p&gt;
+  &lt;div slot="footer"&gt;
+    &lt;my-button variant="primary"&gt;Action&lt;/my-button&gt;
+  &lt;/div&gt;
+&lt;/my-card&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MyBadge Component -->
+    <section class="component-section" id="my-badge">
+      <h2>MyBadge</h2>
+      <p class="component-description">A status badge component with multiple colors and styles.</p>
+
+      <div class="component-demo">
+        <h3>Live Demo</h3>
+        <div class="demo-container">
+          <div class="demo-group">
+            <h4>Colors</h4>
+            <my-badge color="success">Success</my-badge>
+            <my-badge color="warning">Warning</my-badge>
+            <my-badge color="error">Error</my-badge>
+            <my-badge color="info">Info</my-badge>
+            <my-badge color="neutral">Neutral</my-badge>
+          </div>
+          
+          <div class="demo-group">
+            <h4>Sizes</h4>
+            <my-badge color="info" size="small">Small</my-badge>
+            <my-badge color="info" size="medium">Medium</my-badge>
+            <my-badge color="info" size="large">Large</my-badge>
+          </div>
+          
+          <div class="demo-group">
+            <h4>Pill Style</h4>
+            <my-badge color="success" pill>Success Pill</my-badge>
+            <my-badge color="warning" pill>Warning Pill</my-badge>
+            <my-badge color="error" pill>Error Pill</my-badge>
+          </div>
+        </div>
+      </div>
+
+      <div class="api-table">
+        <h3>Props</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Prop</th>
+              <th>Type</th>
+              <th>Default</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>color</code></td>
+              <td><code>'success' | 'warning' | 'error' | 'info' | 'neutral'</code></td>
+              <td><code>'neutral'</code></td>
+              <td>Badge color variant</td>
+            </tr>
+            <tr>
+              <td><code>size</code></td>
+              <td><code>'small' | 'medium' | 'large'</code></td>
+              <td><code>'medium'</code></td>
+              <td>Badge size</td>
+            </tr>
+            <tr>
+              <td><code>pill</code></td>
+              <td><code>boolean</code></td>
+              <td><code>false</code></td>
+              <td>Rounded pill style</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="code-examples">
+        <h3>Usage Examples</h3>
+        
+        <div class="code-tabs">
+          <button class="tab-btn active" onclick="showTab(event, 'badge-html')">HTML</button>
+          <button class="tab-btn" onclick="showTab(event, 'badge-react')">React</button>
+          <button class="tab-btn" onclick="showTab(event, 'badge-vue')">Vue</button>
+          <button class="tab-btn" onclick="showTab(event, 'badge-angular')">Angular</button>
+        </div>
+
+        <div id="badge-html" class="tab-content active">
+          <div class="code-block">
+            <div class="code-header">
+              <span>HTML</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre><code class="language-html">&lt;my-badge color="success" size="medium"&gt;Success&lt;/my-badge&gt;
+&lt;my-badge color="warning" pill&gt;Warning&lt;/my-badge&gt;
+&lt;my-badge color="error" size="small"&gt;Error&lt;/my-badge&gt;</code></pre>
+          </div>
+        </div>
+
+        <div id="badge-react" class="tab-content">
+          <div class="code-block">
+            <div class="code-header">
+              <span>React</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre><code class="language-tsx">import { MyBadge } from 'react-library';
+
+&lt;MyBadge color="success" size="large"&gt;Success&lt;/MyBadge&gt;
+&lt;MyBadge color="info" pill&gt;Info&lt;/MyBadge&gt;</code></pre>
+          </div>
+        </div>
+
+        <div id="badge-vue" class="tab-content">
+          <div class="code-block">
+            <div class="code-header">
+              <span>Vue</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre><code class="language-html">&lt;template&gt;
+  &lt;my-badge color="success" size="medium"&gt;Success&lt;/my-badge&gt;
+  &lt;my-badge color="warning" pill&gt;Warning&lt;/my-badge&gt;
+&lt;/template&gt;</code></pre>
+          </div>
+        </div>
+
+        <div id="badge-angular" class="tab-content">
+          <div class="code-block">
+            <div class="code-header">
+              <span>Angular</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <pre><code class="language-html">&lt;my-badge color="success" size="medium"&gt;Success&lt;/my-badge&gt;
+&lt;my-badge color="warning" [pill]="true"&gt;Warning&lt;/my-badge&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MyComponent -->
+    <section class="component-section" id="my-component">
+      <h2>MyComponent</h2>
+      <p class="component-description">Demo component showing basic Stencil functionality.</p>
+
+      <div class="component-demo">
+        <h3>Live Demo</h3>
+        <div class="demo-container">
+          <my-component first="John" last="Doe"></my-component>
+        </div>
+      </div>
+
+      <div class="api-table">
+        <h3>Props</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Prop</th>
+              <th>Type</th>
+              <th>Default</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>first</code></td>
+              <td><code>string</code></td>
+              <td><code>undefined</code></td>
+              <td>First name</td>
+            </tr>
+            <tr>
+              <td><code>last</code></td>
+              <td><code>string</code></td>
+              <td><code>undefined</code></td>
+              <td>Last name</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <p>Built with ❤️ using StencilJS</p>
+    </footer>
+  </main>
+
+  <script type="module" src="/stencil-library/dist/stencil-library/stencil-library.esm.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-tsx.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+  <script src="/public-docs/script.js"></script>
+</body>
+</html>

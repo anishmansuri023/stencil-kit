@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue 3 Installation - Stencil Design System</title>
+  <link rel="stylesheet" href="/public-docs/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h1>🎨 Stencil DS</h1>
+      <p class="version">v1.0.0</p>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="/public-docs/index.html">Get Started</a></li>
+      <li><a href="/public-docs/components.html">Components</a></li>
+      <li class="nav-section">Installation</li>
+      <li><a href="/public-docs/react.html">React</a></li>
+      <li><a href="/public-docs/vue.html" class="active">Vue 3</a></li>
+      <li><a href="/public-docs/angular.html">Angular</a></li>
+      <li><a href="/public-docs/vanilla.html">Vanilla JS</a></li>
+      <li class="nav-section">Resources</li>
+      <li><a href="/public-docs/examples.html">Examples</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <header class="page-header">
+      <h1>Vue 3 Installation</h1>
+      <p class="subtitle">Add Stencil components to your Vue 3 application</p>
+    </header>
+
+    <section class="guide-section">
+      <h2>Installation</h2>
+      <div class="code-block">
+        <div class="code-header">
+          <span>Terminal</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre><code class="language-bash">npm install @your-org/vue-library</code></pre>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <h2>Setup</h2>
+      <p>Register the component library plugin in your main.ts file:</p>
+      <div class="code-block">
+        <div class="code-header">
+          <span>main.ts</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre><code class="language-typescript">import { createApp } from 'vue';
+import App from './App.vue';
+import { ComponentLibrary } from '@your-org/vue-library';
+
+const app = createApp(App);
+
+// Register Stencil components globally
+app.use(ComponentLibrary);
+
+app.mount('#app');</code></pre>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <h2>Vite Configuration</h2>
+      <p>If using Vite, configure it to recognize custom elements:</p>
+      <div class="code-block">
+        <div class="code-header">
+          <span>vite.config.ts</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre><code class="language-typescript">import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+
+export default defineConfig({
+  plugins: [
+    vue({
+      template: {
+        compilerOptions: {
+          // Treat all tags starting with 'my-' as custom elements
+          isCustomElement: (tag) => tag.startsWith('my-')
+        }
+      }
+    })
+  ]
+});</code></pre>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <h2>Basic Usage</h2>
+      <div class="code-block">
+        <div class="code-header">
+          <span>App.vue</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre><code class="language-html">&lt;template&gt;
+  &lt;div&gt;
+    &lt;my-button variant="primary" size="large"&gt;
+      Click Me
+    &lt;/my-button&gt;
+    
+    &lt;my-card card-title="Welcome" subtitle="Get started" elevation="high"&gt;
+      &lt;p&gt;Card content goes here&lt;/p&gt;
+      &lt;div slot="footer"&gt;
+        &lt;my-badge color="success"&gt;New&lt;/my-badge&gt;
+      &lt;/div&gt;
+    &lt;/my-card&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup lang="ts"&gt;
+// No imports needed - components are globally registered
+&lt;/script&gt;</code></pre>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <h2>Event Handling</h2>
+      <div class="code-block">
+        <div class="code-header">
+          <span>Events</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre><code class="language-html">&lt;template&gt;
+  &lt;div&gt;
+    &lt;p&gt;Count: {{ count }}&lt;/p&gt;
+    &lt;my-button 
+      variant="primary" 
+      @click="count++"
+    &gt;
+      Increment
+    &lt;/my-button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup lang="ts"&gt;
+import { ref } from 'vue';
+
+const count = ref(0);
+&lt;/script&gt;</code></pre>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <h2>Reactive Props</h2>
+      <div class="code-block">
+        <div class="code-header">
+          <span>Reactive Example</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre><code class="language-html">&lt;template&gt;
+  &lt;my-button 
+    :variant="buttonVariant" 
+    :disabled="isDisabled"
+    @click="handleClick"
+  &gt;
+    {{ buttonText }}
+  &lt;/my-button&gt;
+&lt;/template&gt;
+
+&lt;script setup lang="ts"&gt;
+import { ref } from 'vue';
+
+const buttonVariant = ref&lt;'primary' | 'secondary' | 'danger'&gt;('primary');
+const isDisabled = ref(false);
+const buttonText = ref('Click Me');
+
+const handleClick = () => {
+  console.log('Button clicked!');
+};
+&lt;/script&gt;</code></pre>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <h2>Complete Example</h2>
+      <div class="code-block">
+        <div class="code-header">
+          <span>Full Example</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre><code class="language-html">&lt;template&gt;
+  &lt;div style="padding: 20px"&gt;
+    &lt;h1&gt;Dashboard&lt;/h1&gt;
+    
+    &lt;my-card 
+      card-title="Notifications" 
+      :subtitle="`You have ${notifications} new notifications`"
+      elevation="medium"
+    &gt;
+      &lt;p&gt;Check your latest updates&lt;/p&gt;
+      
+      &lt;div slot="footer"&gt;
+        &lt;my-button 
+          variant="primary" 
+          size="small"
+          @click="notifications = 0"
+        &gt;
+          Mark All Read
+        &lt;/my-button&gt;
+        &lt;my-badge color="warning"&gt;{{ notifications }}&lt;/my-badge&gt;
+      &lt;/div&gt;
+    &lt;/my-card&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup lang="ts"&gt;
+import { ref } from 'vue';
+
+const notifications = ref(3);
+&lt;/script&gt;</code></pre>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <h2>Next Steps</h2>
+      <div class="next-steps-grid">
+        <a href="/public-docs/components.html" class="next-step-card">
+          <h3>📦 View All Components</h3>
+          <p>Explore the complete component library</p>
+        </a>
+        <a href="/public-docs/examples.html" class="next-step-card">
+          <h3>💡 See Examples</h3>
+          <p>Check out real-world usage examples</p>
+        </a>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <p>Built with ❤️ using StencilJS</p>
+    </footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+  <script src="/public-docs/script.js"></script>
+</body>
+</html>

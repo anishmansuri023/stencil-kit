@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stencil Design System - Documentation</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h1>🎨 Stencil DS</h1>
+      <p class="version">v1.0.0</p>
+    </div>
+    
+    <ul class="nav-menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="components.html">Components</a></li>
+      <li class="nav-section">Framework Guides</li>
+      <li><a href="vanilla.html">Vanilla HTML/JS</a></li>
+      <li><a href="react.html">React</a></li>
+      <li><a href="vue.html">Vue 3</a></li>
+      <li><a href="angular.html">Angular</a></li>
+      <li class="nav-section">Resources</li>
+      <li><a href="setup.html">Setup Guide</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <header class="page-header">
+      <h1>Stencil Design System</h1>
+      <p class="subtitle">Framework-agnostic web components for modern applications</p>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Build Once, Use Everywhere</h2>
+        <p>A modern component library built with StencilJS that works seamlessly across React, Vue, Angular, and vanilla HTML/JS.</p>
+        <div class="cta-buttons">
+          <a href="setup.html" class="btn btn-primary">Get Started</a>
+          <a href="components.html" class="btn btn-secondary">View Components</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Why Stencil Design System?</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Framework Agnostic</h3>
+          <p>Works with React, Vue, Angular, or vanilla JavaScript. Write once, use anywhere.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>High Performance</h3>
+          <p>Lazy loading, small bundle sizes, and efficient Shadow DOM rendering.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Beautiful Components</h3>
+          <p>Modern, accessible components with clean design and smooth animations.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Monorepo Architecture</h3>
+          <p>Managed with Lerna and Nx for efficient builds and caching.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔧</div>
+          <h3>TypeScript Support</h3>
+          <p>Full TypeScript definitions for type-safe development.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">♿</div>
+          <h3>Accessible</h3>
+          <p>Built with accessibility in mind, following WCAG guidelines.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-start">
+      <h2>Quick Start</h2>
+      <div class="code-block">
+        <div class="code-header">
+          <span>Terminal</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre><code class="language-bash"># Clone the repository
+git clone &lt;your-repo-url&gt;
+cd my-monorepo
+
+# Install dependencies
+npm install
+
+# Build all libraries
+npm run build
+
+# Run all demo apps
+npm run dev</code></pre>
+      </div>
+      <p class="note">The <code>npm run dev</code> command will automatically open 4 browser tabs with all demo applications.</p>
+    </section>
+
+    <section class="components-preview">
+      <h2>Component Preview</h2>
+      <p>Explore our collection of beautiful, reusable components:</p>
+      
+      <div class="component-showcase">
+        <div class="showcase-item">
+          <h3>Buttons</h3>
+          <div class="demo">
+            <my-button variant="primary" size="small">Small</my-button>
+            <my-button variant="primary" size="medium">Medium</my-button>
+            <my-button variant="primary" size="large">Large</my-button>
+          </div>
+        </div>
+
+        <div class="showcase-item">
+          <h3>Badges</h3>
+          <div class="demo">
+            <my-badge color="success">Success</my-badge>
+            <my-badge color="warning">Warning</my-badge>
+            <my-badge color="error">Error</my-badge>
+            <my-badge color="info" pill>Info Pill</my-badge>
+          </div>
+        </div>
+
+        <div class="showcase-item">
+          <h3>Cards</h3>
+          <div class="demo">
+            <my-card card-title="Example Card" subtitle="With elevation" elevation="medium" style="max-width: 300px;">
+              <p>This is a card component with customizable elevation and slots.</p>
+              <div slot="footer">
+                <my-button variant="primary" size="small">Action</my-button>
+                <my-badge color="success" size="small">New</my-badge>
+              </div>
+            </my-card>
+          </div>
+        </div>
+      </div>
+
+      <a href="components.html" class="btn btn-primary">View All Components →</a>
+    </section>
+
+    <section class="framework-support">
+      <h2>Framework Support</h2>
+      <div class="framework-grid">
+        <div class="framework-card">
+          <div class="framework-icon">📄</div>
+          <h3>Vanilla HTML/JS</h3>
+          <p>Direct script tag usage, no build step required</p>
+          <a href="vanilla.html">Learn more →</a>
+        </div>
+        <div class="framework-card">
+          <div class="framework-icon">⚛️</div>
+          <h3>React</h3>
+          <p>Type-safe React wrapper components</p>
+          <a href="react.html">Learn more →</a>
+        </div>
+        <div class="framework-card">
+          <div class="framework-icon">💚</div>
+          <h3>Vue 3</h3>
+          <p>Vue plugin with global component registration</p>
+          <a href="vue.html">Learn more →</a>
+        </div>
+        <div class="framework-card">
+          <div class="framework-icon">🅰️</div>
+          <h3>Angular</h3>
+          <p>Standalone Angular components</p>
+          <a href="angular.html">Learn more →</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <p>Built with ❤️ using StencilJS</p>
+      <p class="footer-links">
+        <a href="https://stenciljs.com" target="_blank">StencilJS</a> •
+        <a href="https://lerna.js.org" target="_blank">Lerna</a> •
+        <a href="https://nx.dev" target="_blank">Nx</a>
+      </p>
+    </footer>
+  </main>
+
+  <script type="module" src="../stencil-library/dist/stencil-library/stencil-library.esm.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

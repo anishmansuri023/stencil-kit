@@ -12,7 +12,43 @@ import { createComponent } from '@stencil/react-output-target/runtime';
 import React from 'react';
 
 import type { Components } from "stencil-library/dist/components";
+import { MyBadge as MyBadgeElement, defineCustomElement as defineMyBadge } from "stencil-library/dist/components/my-badge.js";
+import { MyButton as MyButtonElement, defineCustomElement as defineMyButton } from "stencil-library/dist/components/my-button.js";
+import { MyCard as MyCardElement, defineCustomElement as defineMyCard } from "stencil-library/dist/components/my-card.js";
 import { MyComponent as MyComponentElement, defineCustomElement as defineMyComponent } from "stencil-library/dist/components/my-component.js";
+
+export type MyBadgeEvents = NonNullable<unknown>;
+
+export const MyBadge: StencilReactComponent<MyBadgeElement, MyBadgeEvents, Components.MyBadge> = /*@__PURE__*/ createComponent<MyBadgeElement, MyBadgeEvents, Components.MyBadge>({
+    tagName: 'my-badge',
+    elementClass: MyBadgeElement,
+    // @ts-ignore - ignore potential React type mismatches between the Stencil Output Target and your project.
+    react: React,
+    events: {} as MyBadgeEvents,
+    defineCustomElement: defineMyBadge
+});
+
+export type MyButtonEvents = NonNullable<unknown>;
+
+export const MyButton: StencilReactComponent<MyButtonElement, MyButtonEvents, Components.MyButton> = /*@__PURE__*/ createComponent<MyButtonElement, MyButtonEvents, Components.MyButton>({
+    tagName: 'my-button',
+    elementClass: MyButtonElement,
+    // @ts-ignore - ignore potential React type mismatches between the Stencil Output Target and your project.
+    react: React,
+    events: {} as MyButtonEvents,
+    defineCustomElement: defineMyButton
+});
+
+export type MyCardEvents = NonNullable<unknown>;
+
+export const MyCard: StencilReactComponent<MyCardElement, MyCardEvents, Components.MyCard> = /*@__PURE__*/ createComponent<MyCardElement, MyCardEvents, Components.MyCard>({
+    tagName: 'my-card',
+    elementClass: MyCardElement,
+    // @ts-ignore - ignore potential React type mismatches between the Stencil Output Target and your project.
+    react: React,
+    events: {} as MyCardEvents,
+    defineCustomElement: defineMyCard
+});
 
 export type MyComponentEvents = NonNullable<unknown>;
 

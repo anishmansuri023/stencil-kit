@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "dev": "ng serve my-app --port 4200",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build component-library && ng build my-app",
+    "build:lib": "ng build component-library",
+    "build:app": "ng build my-app",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

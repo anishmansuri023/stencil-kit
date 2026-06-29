@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue 3 - Stencil Design System</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header"><h1>🎨 Stencil DS</h1><p class="version">v1.0.0</p></div>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="components.html">Components</a></li>
+      <li class="nav-section">Framework Guides</li>
+      <li><a href="vanilla.html">Vanilla HTML/JS</a></li>
+      <li><a href="react.html">React</a></li>
+      <li><a href="vue.html" class="active">Vue 3</a></li>
+      <li><a href="angular.html">Angular</a></li>
+      <li class="nav-section">Resources</li>
+      <li><a href="setup.html">Setup Guide</a></li>
+    </ul>
+  </nav>
+  <main class="content">
+    <header class="page-header"><h1>Vue 3 Integration</h1><p class="subtitle">Vue plugin with global component registration</p></header>
+    <section class="guide-section">
+      <h2>Installation</h2>
+      <p>The Vue library is included at <code>packages/vue-library</code>.</p>
+      <div class="code-block">
+        <div class="code-header"><span>Terminal</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre><code class="language-bash">npm run build</code></pre>
+      </div>
+    </section>
+    <section class="guide-section">
+      <h2>Register Plugin</h2>
+      <div class="code-block">
+        <div class="code-header"><span>main.ts</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre><code class="language-typescript">import { createApp } from 'vue';
+import App from './App.vue';
+import { ComponentLibrary } from 'vue-library';
+
+const app = createApp(App);
+app.use(ComponentLibrary);
+app.mount('#app');</code></pre>
+      </div>
+    </section>
+    <section class="guide-section">
+      <h2>Usage</h2>
+      <div class="code-block">
+        <div class="code-header"><span>App.vue</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre><code class="language-html">&lt;template&gt;
+  &lt;my-button variant="primary" size="large"&gt;Click Me&lt;/my-button&gt;
+  &lt;my-card card-title="Welcome" subtitle="Get started" elevation="high"&gt;
+    &lt;p&gt;Card content&lt;/p&gt;
+    &lt;div slot="footer"&gt;
+      &lt;my-badge color="success"&gt;New&lt;/my-badge&gt;
+    &lt;/div&gt;
+  &lt;/my-card&gt;
+&lt;/template&gt;</code></pre>
+      </div>
+    </section>
+    <footer class="page-footer"><p>Built with ❤️ using StencilJS</p></footer>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
