@@ -1,5 +1,5 @@
 {
-  "name": "@your-org/tailwind-plugin",
+  "name": "@stencil-kit/tailwind-plugin",
   "version": "0.0.1",
   "description": "Tailwind CSS plugin for Stencil Design System",
   "main": "dist/index.js",
@@ -23,5 +23,9 @@
     "plugin",
     "design-system",
     "stencil"
-  ]
+  ],
+  "gitHead": "31fe35ab5dea78aa8a9bc60f56f4f2ef05769ca9",
+  "publishConfig": {
+    "access": "public"
+  }
 }
